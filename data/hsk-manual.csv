@@ -205,6 +205,7 @@ hanzi,level,frequency,pinyin,meanings
 下雨,1,5648,xià yǔ,to rain
 杯,1,,bēi,(measure word for cups or glasses of a liquid)
 杯子,1,6162,bēi zi,cup; glass
+车站,1,7270,chē zhàn,station; stop
 火车站,1,7270,huǒ chē zhàn,train station
 饭,1,,fàn,meal; food; cuisine
 早饭,1,,zǎo fàn,breakfast
@@ -235,7 +236,7 @@ A的时候,1,,A de shí shou,when A
 也,2,23,yě,also; and
 到,2,29,dào,to reach; to arrive
 还,2,37,hái,still; yet
-着,2,38,zhe,(indicates present tense)
+着,2,38,zhe,(indicates continuous tense)
 给,2,46,gěi,to give
 让,2,54,ràng,to let sb do sth; to have sb do sth; to make sb (feel sad etc)
 吧,2,58,ba,(indicates imperative); ...right?
@@ -245,6 +246,7 @@ A的时候,1,,A de shí shou,when A
 真,2,76,zhēn,really; truly
 两,2,81,liǎng,two
 出,2,85,chū,to go out; to come out
+出去,2,,chū qù,to go out; to get out.
 已经,2,85,yǐ jīng,already
 最,2,89,zuì,most; the most
 因为,2,91,yīn wèi,because; owing to; on account of
@@ -262,7 +264,7 @@ A的时候,1,,A de shí shou,when A
 新,2,150,xīn,new; newly
 找,2,152,zhǎo,to look for; to seek
 快,2,153,kuài,quick; soon; almost
-比,2,155,bǐ,A比B... -> A is more ... than B
+A比BC,2,155,A bǐ B C,A is more C than B
 所以,2,157,suǒ yǐ,therefore; so
 觉得,2,161,jué de,to think that ...; to feel that ...
 向,2,165,xiàng,towards; to; to turn towards
@@ -271,7 +273,7 @@ A的时候,1,,A de shí shou,when A
 大家,2,189,dà jiā,everyone
 非常,2,194,fēi cháng,very; really
 孩子,2,207,hái zi,child
-别,2,214,bié,don't ...!
+别,2,214,bié,don't...
 公司,2,220,gōng sī,company; firm; corporation
 第一,2,223,dì yī,first; number one
 长,2,246,cháng,long
@@ -283,11 +285,11 @@ A的时候,1,,A de shí shou,when A
 件,2,292,jiàn,(classifier for clothes)
 张,2,316,zhāng,"sheet of paper; (classifier for flat objects, sheets)"
 准备,2,333,zhǔn bèi,to prepare; preparation
-进,2,338,jìn,to go forward; to advance
+进,2,338,jìn,to enter; to go forward; to advance
 每,2,340,měi,each; every
 每天,2,,měi tiān,every day
 您,2,357,nín,"you (courteous)"
-送,2,370,sòng,to give (as a present); to send; to deliver
+送,2,370,sòng,to gift; to send; to deliver
 笑,2,382,xiào,to laugh; to smile; to laugh at
 女,2,,nǚ,female
 女人,2,383,nǚ rén,woman
@@ -305,13 +307,18 @@ A的时候,1,,A de shí shou,when A
 外,2,489,wài,outside; foreign
 外国人,2,,wài guó rén,foreigner
 老外,2,,lǎo wài,foreigner; non-Chinese
+帮,2,,bāng,to help; to assist; to support
 帮助,2,499,bāng zhù,to help; to assist; assistance; aid
+早,2,,zǎo,early; morning
+晚,2,,wǎn,night; late; evening
 晚上,2,502,wǎn shang,evening; night
 错,2,531,cuò,mistake; wrong; bad
+不错,2,,bú cuò,nice; not bad
 卖,2,590,mài,to sell
 远,2,635,yuǎn,far; distant; remote
 快乐,2,637,kuài lè,happy; joyful
 懂,2,669,dǒng,to understand; to comprehend
+听不懂,2,,tīng bu dǒng,unable to make sense of what one is hearing
 药,2,701,yào,medicine; drug
 黑,2,724,hēi,black
 身体,2,731,shēn tǐ,the body; one's health
@@ -330,8 +337,7 @@ A的时候,1,,A de shí shou,when A
 票,2,956,piào,ticket; ballot; banknote
 意思,2,988,yì si,meaning; idea
 早上,2,1092,zǎo shang,early morning
-回答,2,1100,huí dá,to reply; to answer
-回答,2,1100,huí dá,reply; answer
+回答,2,1100,huí dá,to reply; to answer; reply; answer
 运动,2,1138,yùn dòng,sports; exercise; to exercise
 妻子,2,1187,qī zi,wife
 鱼,2,1189,yú,fish
@@ -342,6 +348,7 @@ A的时候,1,,A de shí shou,when A
 房间,2,1357,fáng jiān,room
 丈夫,2,1376,zhàng fu,husband
 上班,2,1495,shàng bān,to go to work; to start work; to be on duty
+下班,2,,xià bān,to finish work; to get off work
 生日,2,1506,shēng rì,birthday
 姐姐,2,1513,jiě jie,older sister
 课,2,1517,kè,class; lesson
@@ -350,9 +357,10 @@ A的时候,1,,A de shí shou,when A
 考试,2,1718,kǎo shì,exam; to take an exam
 千,2,1728,qiān,thousand
 慢,2,1770,màn,slow
-旁边,2,1815,páng biān,side; adjacent place
+旁边,2,1815,páng biān,beside; side; nearby
 颜色,2,1880,yán sè,color
 雪,2,1971,xuě,snow
+下雪,2,,xià xuě,to snow
 妹妹,2,2093,mèi mei,younger sister
 报纸,2,2232,bào zhǐ,newspaper
 贵,2,2239,guì,expensive
@@ -364,7 +372,8 @@ A的时候,1,,A de shí shou,when A
 百,2,2455,bǎi,hundred
 好吃,2,2484,hǎo chī,tasty (of food); delicious (of food)
 好喝,2,,hǎo hē,tasty (of a drink); delicious (of a drink)
-旅游,2,2534,lu:3 yóu,trip; journey; to travel
+旅游,2,2534,lǚ yóu,trip; journey; to travel
+旅行,2,,lǚ xíng,trip; journey; to travel
 起床,2,2645,qǐ chuáng,to get up; to get out of bed
 题,2,2690,tí,exam question; problem for discussion
 便宜,2,2814,pián yi,cheap; inexpensive
@@ -372,6 +381,7 @@ A的时候,1,,A de shí shou,when A
 右边,2,2906,yòu bian,"right side; right, to the right"
 牛奶,2,2986,niú nǎi,cow milk
 自行车,2,3400,zì xíng chē,bicycle; bike
+鸡,2,,jī,chicken
 鸡蛋,2,3501,jī dàn,(chicken) egg
 姓,2,3576,xìng,surname; to be surnamed
 游泳,2,3695,yóu yǒng,swimming; to swim
@@ -386,12 +396,26 @@ A的时候,1,,A de shí shou,when A
 跑步,2,7199,pǎo bù,to run; to jog
 西瓜,2,9098,xī guā,watermelon
 晴,2,9343,qíng,clear; fine (weather)
+羊,2,,ròu,meat; flesh
+牛肉,2,,niú ròu,beef
 羊肉,2,11336,yáng ròu,mutton; goat meat
+鸡肉,2,,jī ròu,chicken meat
 公共汽车,2,13591,gōng gòng qì chē,bus
 打,2,,dǎ,to beat; to strike; to hit
 打球,2,,dǎ qiú,to play a ball game
 篮球,2,,lán qiú,basketball (the ball); basketball (the game)
 打篮球,2,1000000,dǎ lán qiú,to play basketball
+过,2,,guo,(verb suffix indicating past tense)
+都A了,2,,dōu le,already A
+一下,2,,yí xià,"(after a verb, indicates a simple task, a small time)"
+宾馆,2,4994,bīn guǎn,hotel; lodge; guesthouse
+往,2,760,wǎng,to; towards
+病人,2,,bìng rén,patient; sick person
+等,2,83,děng,to wait for; to await
+听说,2,,tīng shuō,to hear of; to hear about
+茶馆,2,,chá guǎn,tea house
+对,2,,duì,for (preposition)
+回国,2,,huí guó,to go back to one's country
 啊,3,47,a,"(interjection showing surprise); (modal particle showing enthusiasm)"
 把,3,50,bà,handle
 把,3,50,bǎ,to hold; to grasp
@@ -407,17 +431,8 @@ A的时候,1,,A de shí shou,when A
 被,3,54,bèi,"(since c. 2009) (sarcastic or jocular) used to indicate that the following word should be regarded as being in air quotes (as in 被旅游 to ""go on a trip"", for example)"
 自己,3,56,zì jǐ,oneself
 自己,3,56,zì jǐ,one's own
-用,3,79,yòng,to use
-用,3,79,yòng,to employ
-用,3,79,yòng,to have to
-用,3,79,yòng,to eat or drink
-用,3,79,yòng,expense or outlay
-用,3,79,yòng,usefulness
-用,3,79,yòng,hence
-用,3,79,yòng,therefore
-如果,3,89,rú guǒ,if
-如果,3,89,rú guǒ,in case
-如果,3,89,rú guǒ,in the event that
+用,3,79,yòng,to use; to employ; to have to
+如果,3,89,rú guǒ,if; in case; in the event that
 又,3,91,yòu,(once) again
 又,3,91,yòu,also
 又,3,91,yòu,both... and...
@@ -544,16 +559,9 @@ A的时候,1,,A de shí shou,when A
 必须,3,241,bì xū,must
 必须,3,241,bì xū,compulsory
 必须,3,241,bì xū,necessarily
-地方,3,254,dì fang,area
-地方,3,254,dì fang,place
-地方,3,254,dì fang,space
-地方,3,254,dì fang,room
-地方,3,254,dì fang,territory
-地方,3,254,dì fāng,region
-地方,3,254,dì fāng,regional (away from the central administration)
-地方,3,254,dì fāng,local
-老,3,266,lǎo,prefix used before the surname of a person or a numeral indicating the order of birth of the children in a family or to indicate affection or familiarity
+地方,3,254,dì fang,place; area; region
 老,3,266,lǎo,old (of people)
+老,3,266,lǎo,prefix used before the surname of a person or a numeral indicating the order of birth of the children in a family or to indicate affection or familiarity
 老,3,266,lǎo,venerable (person)
 老,3,266,lǎo,experienced
 老,3,266,lǎo,of long standing
@@ -723,7 +731,7 @@ A的时候,1,,A de shí shou,when A
 花,3,435,huā,flower
 花,3,435,huā,blossom
 花,3,435,huā,also pr. [wěi]
-虽然,3,440,suī rán,although; even though (often used correlatively with 是 or 是 etc)
+虽然,3,440,suī rán,although; even though
 解决,3,458,jiě jué,to solve; to resolve; to settle (a problem)
 解决,3,458,jiě jué,"to eliminate; to wipe out (an enemy, bandits etc)"
 关于,3,478,guān yú,pertaining to
@@ -795,9 +803,7 @@ A的时候,1,,A de shí shou,when A
 比较,3,607,bǐ jiào,relatively
 比较,3,607,bǐ jiào,quite
 比较,3,607,bǐ jiào,comparison
-最近,3,612,zuì jìn,recently
-最近,3,612,zuì jìn,soon
-最近,3,612,zuì jìn,nearest
+最近,3,612,zuì jìn,recently; soon
 换,3,618,huàn,to exchange
 换,3,618,huàn,to change (clothes etc)
 换,3,618,huàn,to substitute
@@ -837,11 +843,7 @@ A的时候,1,,A de shí shou,when A
 米,3,663,mǐ,meter (classifier)
 容易,3,664,róng yì,easy; straightforward
 容易,3,664,róng yì,likely; liable to; apt to
-明白,3,676,míng bai,clear
-明白,3,676,míng bai,obvious
-明白,3,676,míng bai,unequivocal
-明白,3,676,míng bai,to understand
-明白,3,676,míng bai,to realize
+明白,3,676,míng bai,clear; obvious; to understand to realize
 根据,3,694,gēn jù,according to
 根据,3,694,gēn jù,based on
 根据,3,694,gēn jù,basis
@@ -931,10 +933,7 @@ A的时候,1,,A de shí shou,when A
 作用,3,955,zuò yòng,purpose
 作用,3,955,zuò yòng,intent
 作用,3,955,zuò yòng,"(suffix) -ation, -tion etc, as in 用, inhibition"
-西,3,958,Xī,the West
-西,3,958,Xī,abbr. for Spain 牙
-西,3,958,Xī,Spanish
-西,3,958,xī,west
+西,3,958,xī,west; the West
 差,3,968,chà,different
 差,3,968,chà,wrong; mistaken
 差,3,968,chà,to fall short; to lack
@@ -967,11 +966,7 @@ A的时候,1,,A de shí shou,when A
 几乎,3,1001,jī hū,almost; nearly; practically
 附近,3,1020,fù jìn,nearby; neighboring
 附近,3,1020,fù jìn,(in the) vicinity (of); neighborhood
-认真,3,1020,rèn zhēn,conscientious
-认真,3,1020,rèn zhēn,earnest
-认真,3,1020,rèn zhēn,serious
-认真,3,1020,rèn zhēn,to take seriously
-认真,3,1020,rèn zhēn,to take to heart
+认真,3,1020,rèn zhēn,conscientious; earnest; serious
 脚,3,1024,jiǎo,foot
 脚,3,1024,jiǎo,leg (of an animal or an object)
 脚,3,1024,jiǎo,base (of an object)
@@ -1083,6 +1078,7 @@ A的时候,1,,A de shí shou,when A
 东,3,1509,dōng,east
 东,3,1509,dōng,host (i.e. sitting on east side of guest)
 东,3,1509,dōng,landlord
+头,3,,tóu,head
 头发,3,1533,tóu fa,hair (on the head)
 害怕,3,1536,hài pà,to be afraid
 害怕,3,1536,hài pà,to be scared
@@ -1131,10 +1127,7 @@ A的时候,1,,A de shí shou,when A
 经理,3,1838,jīng lǐ,director
 兴趣,3,1847,xìng qù,interest (desire to know about sth)
 兴趣,3,1847,xìng qù,interest (thing in which one is interested); hobby
-帮忙,3,1860,bāng máng,to help
-帮忙,3,1860,bāng máng,to lend a hand
-帮忙,3,1860,bāng máng,to do a favor
-帮忙,3,1860,bāng máng,to do a good turn
+帮忙,3,1860,bāng máng,to help; to lend a hand; to do a favor
 电子,3,1874,diàn zǐ,electronic
 电子,3,1874,diàn zǐ,electron (particle physics)
 见面,3,1876,jiàn miàn,to meet; to see each other
@@ -1233,12 +1226,7 @@ A的时候,1,,A de shí shou,when A
 安静,3,2501,ān jìng,quiet
 安静,3,2501,ān jìng,peaceful
 安静,3,2501,ān jìng,calm
-作业,3,2574,zuò yè,school assignment
-作业,3,2574,zuò yè,homework
-作业,3,2574,zuò yè,work
-作业,3,2574,zuò yè,task
-作业,3,2574,zuò yè,operation
-作业,3,2574,zuò yè,to operate
+作业,3,2574,zuò yè,school assignment; homework; task
 瘦,3,2595,shòu,thin
 瘦,3,2595,shòu,to lose weight
 瘦,3,2595,shòu,(of clothing) tight
@@ -1303,8 +1291,7 @@ A的时候,1,,A de shí shou,when A
 叔叔,3,3510,shū shu,father's younger brother
 叔叔,3,3510,shū shu,uncle
 叔叔,3,3510,shū shu,Taiwan pr. [shú shu]
-洗澡,3,3512,xǐ zǎo,to bathe
-洗澡,3,3512,xǐ zǎo,to take a shower
+洗澡,3,3512,xǐ zǎo,to bathe; to take a shower
 地图,3,3548,dì tú,map
 帽子,3,3553,mào zi,hat
 帽子,3,3553,mào zi,cap
@@ -1395,9 +1382,6 @@ A的时候,1,,A de shí shou,when A
 爱好,3,4902,ài hào,interest; hobby
 衬衫,3,4988,chèn shān,shirt
 衬衫,3,4988,chèn shān,blouse
-宾馆,3,4994,bīn guǎn,guesthouse
-宾馆,3,4994,bīn guǎn,lodge
-宾馆,3,4994,bīn guǎn,hotel
 冬,3,5272,Dōng,surname Dong
 冬,3,5272,dōng,winter
 冬,3,5272,dōng,(onom.) beating a drum
@@ -1494,8 +1478,6 @@ A的时候,1,,A de shí shou,when A
 等,4,83,děng,grade
 等,4,83,děng,equal to
 等,4,83,děng,same as
-等,4,83,děng,to wait for
-等,4,83,děng,to await
 等,4,83,děng,et cetera
 等,4,83,děng,and so on
 等,4,83,děng,et al. (and other authors)
@@ -1573,9 +1555,7 @@ A的时候,1,,A de shí shou,when A
 却,4,199,què,to retreat
 却,4,199,què,nevertheless
 却,4,199,què,even though
-生活,4,203,shēng huó,to live
-生活,4,203,shēng huó,life
-生活,4,203,shēng huó,livelihood
+生活,4,203,shēng huó,to live; life; livelihood
 发生,4,211,fā shēng,to happen; to occur; to take place; to break out
 不过,4,216,bù guò,only
 不过,4,216,bù guò,merely
@@ -1977,8 +1957,6 @@ A的时候,1,,A de shí shou,when A
 座,4,751,zuò,"classifier for buildings, mountains and similar immovable objects"
 技术,4,758,jì shù,technology; technique; skill
 往,4,760,wǎng,to go (in a direction)
-往,4,760,wǎng,to
-往,4,760,wǎng,towards
 往,4,760,wǎng,(of a train) bound for
 往,4,760,wǎng,past
 往,4,760,wǎng,previous
@@ -3533,8 +3511,7 @@ A的时候,1,,A de shí shou,when A
 个子,4,10888,gè zi,build
 个子,4,10888,gè zi,size
 大使馆,4,11530,dà shǐ guǎn,embassy
-饺子,4,11834,jiǎo zi,dumpling
-饺子,4,11834,jiǎo zi,pot-sticker
+饺子,4,11834,jiǎo zi,dumpling; gyoza
 垃圾桶,4,11938,lā jī tǒng,rubbish bin
 垃圾桶,4,11938,lā jī tǒng,trash can
 垃圾桶,4,11938,lā jī tǒng,garbage can
@@ -3733,10 +3710,7 @@ A的时候,1,,A de shí shou,when A
 行动,5,666,xíng dòng,action
 行动,5,666,xíng dòng,to move about
 行动,5,666,xíng dòng,mobile
-开心,5,667,kāi xīn,to feel happy
-开心,5,667,kāi xīn,to rejoice
-开心,5,667,kāi xīn,to have a great time
-开心,5,667,kāi xīn,to make fun of sb
+开心,5,667,kāi xīn,to feel happy; to rejoice
 合作,5,668,hé zuò,to cooperate
 合作,5,668,hé zuò,to collaborate
 合作,5,668,hé zuò,to work together
@@ -4856,10 +4830,10 @@ A的时候,1,,A de shí shou,when A
 避免,5,2140,bì miǎn,to refrain from
 生产,5,2146,shēng chǎn,to produce; to manufacture
 生产,5,2146,shēng chǎn,to give birth to a child
-女士,5,2155,nu:3 shì,lady
-女士,5,2155,nu:3 shì,madam
-女士,5,2155,nu:3 shì,Miss
-女士,5,2155,nu:3 shì,Ms
+女士,5,2155,nǚ shì,lady
+女士,5,2155,nǚ shì,madam
+女士,5,2155,nǚ shì,Miss
+女士,5,2155,nǚ shì,Ms
 成长,5,2157,chéng zhǎng,to mature
 成长,5,2157,chéng zhǎng,to grow
 成长,5,2157,chéng zhǎng,growth
@@ -5102,8 +5076,7 @@ A的时候,1,,A de shí shou,when A
 背景,5,2420,bèi jǐng,background; backdrop; context
 背景,5,2420,bèi jǐng,(fig.) powerful backer
 狼,5,2421,láng,wolf
-进步,5,2425,jìn bù,progress; improvement
-进步,5,2425,jìn bù,to improve; to progress
+进步,5,2425,jìn bù,progress; improvement; to improve; to progress
 闻,5,2427,Wén,surname Wen
 闻,5,2427,wén,to hear
 闻,5,2427,wén,news
@@ -5339,7 +5312,7 @@ A的时候,1,,A de shí shou,when A
 结构,5,2786,jié gòu,composition
 结构,5,2786,jié gòu,makeup
 结构,5,2786,jié gòu,architecture
-妇女,5,2790,fù nu:3,woman
+妇女,5,2790,fù nǚ,woman
 矛盾,5,2794,máo dùn,contradiction
 矛盾,5,2794,máo dùn,conflicting views
 矛盾,5,2794,máo dùn,contradictory
@@ -9164,10 +9137,10 @@ A的时候,1,,A de shí shou,when A
 分散,6,4846,fēn sàn,to scatter
 分散,6,4846,fēn sàn,to disperse
 分散,6,4846,fēn sàn,to distribute
-履行,6,4856,lu:3 xíng,to fulfill (one's obligations)
-履行,6,4856,lu:3 xíng,to carry out (a task)
-履行,6,4856,lu:3 xíng,to implement (an agreement)
-履行,6,4856,lu:3 xíng,to perform
+履行,6,4856,lǚ xíng,to fulfill (one's obligations)
+履行,6,4856,lǚ xíng,to carry out (a task)
+履行,6,4856,lǚ xíng,to implement (an agreement)
+履行,6,4856,lǚ xíng,to perform
 竞赛,6,4857,jìng sài,to compete; to race
 竞赛,6,4857,jìng sài,contest; competition; match; race
 捏,6,4857,niē,to hold between the thumb and fingers
@@ -10225,9 +10198,9 @@ A的时候,1,,A de shí shou,when A
 愈,6,6850,yù,better
 愈,6,6850,yù,variant of 愈
 愈,6,6850,yù,to heal
-伴侣,6,6851,bàn lu:3,companion
-伴侣,6,6851,bàn lu:3,mate
-伴侣,6,6851,bàn lu:3,partner
+伴侣,6,6851,bàn lǚ,companion
+伴侣,6,6851,bàn lǚ,mate
+伴侣,6,6851,bàn lǚ,partner
 误解,6,6851,wù jiě,to misunderstand
 误解,6,6851,wù jiě,misunderstanding
 自主,6,6858,zì zhǔ,independent
@@ -14211,8 +14184,8 @@ A的时候,1,,A de shí shou,when A
 生疏,6,23514,shēng shū,out of practice
 生疏,6,23514,shēng shū,not accustomed
 迸发,6,23536,bèng fā,to burst forth
-屡次,6,23740,lu:3 cì,repeatedly
-屡次,6,23740,lu:3 cì,time and again
+屡次,6,23740,lǚ cì,repeatedly
+屡次,6,23740,lǚ cì,time and again
 声势,6,23742,shēng shì,fame and power
 声势,6,23742,shēng shì,prestige
 声势,6,23742,shēng shì,influence
