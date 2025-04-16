@@ -241,11 +241,17 @@ class MainWindow(QtWidgets.QWidget):
         self.text_display.populate()
         self.meaning_display.populate()
 
+    def eventFilter(self, obj, event):
+        if event.type() == QtCore.QEvent.KeyPress and event.key() == Qt.Key_Space:
+            self.randomize()
+            return True  # Prevent further processing
+        return super().eventFilter(obj, event)
+
 
 def main() -> None:
     app = QtWidgets.QApplication(sys.argv)
-
     window = MainWindow()
+    app.installEventFilter(window)
     window.show()
 
     sys.exit(app.exec())
