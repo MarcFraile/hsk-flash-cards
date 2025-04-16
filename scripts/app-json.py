@@ -93,7 +93,7 @@ class LevelSelector(QtWidgets.QWidget):
         self.level_group.idClicked.connect(self.state.set_current_level)
         self.setLayout(level_layout)
 
-class TextDisplay(QtWidgets.QWidget):
+class TextDisplayInner(QtWidgets.QWidget):
     state          : State
     latin_font     : QtGui.QFont
     character_font : QtGui.QFont
@@ -134,6 +134,38 @@ class TextDisplay(QtWidgets.QWidget):
             self.layout.addWidget(character_label, 1, i)
 
 
+class TextDisplay(QtWidgets.QWidget):
+    state         : State
+    inner_display : TextDisplayInner
+    hsk_display   : QtWidgets.QLabel
+
+    def __init__(self, state: State, latin_font: QtGui.QFont, character_font: QtGui.QFont):
+        super().__init__()
+
+        self.state = state
+        self.inner_display = TextDisplayInner(state, latin_font, character_font)
+
+        self.init_ui()
+
+    def init_ui(self) -> None:
+        layout = QtWidgets.QGridLayout()
+        self.setLayout(layout)
+
+        self.hsk_display = QtWidgets.QLabel()
+        self.hsk_display.setStyleSheet("color: green")
+        self.hsk_display.setAlignment(QtCore.Qt.AlignmentFlag.AlignTop | QtCore.Qt.AlignmentFlag.AlignRight)
+
+        layout.addWidget(self.inner_display, 0, 0)
+        layout.addWidget(self.hsk_display, 0, 0)
+
+        self.setSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred)
+        self.populate()
+
+    def populate(self) -> None:
+        self.inner_display.populate()
+        self.hsk_display.setText(f"HSK{self.state.current_entry.level}")
+
+
 class MeaningDisplay(QtWidgets.QWidget):
     state      : State
     latin_font : QtGui.QFont
@@ -165,39 +197,55 @@ class MeaningDisplay(QtWidgets.QWidget):
             self.layout.addWidget(meaning_label)
 
 
+class MainWindow(QtWidgets.QWidget):
+    state          : State
+    latin_font     : QtGui.QFont
+    character_font : QtGui.QFont
+
+    level_selector  : LevelSelector
+    text_display    : TextDisplay
+    meaning_display : MeaningDisplay
+    next_button     : QtWidgets.QPushButton
+
+    def __init__(self):
+        super().__init__(windowTitle="HSK Flashcards", windowIcon=QtGui.QIcon("data/字.png"))
+
+        self.state = State()
+        self.latin_font = QtGui.QFont("Arial", pointSize=16)
+        self.character_font = QtGui.QFont("KaiTi", pointSize=80)
+
+        self.init_ui()
+        self.randomize()
+
+    def init_ui(self) -> None:
+        main_layout = QtWidgets.QVBoxLayout()
+
+        self.level_selector = LevelSelector(self.state)
+        main_layout.addWidget(self.level_selector)
+
+        self.text_display = TextDisplay(self.state, self.latin_font, self.character_font)
+        main_layout.addWidget(self.text_display)
+
+        self.meaning_display = MeaningDisplay(self.state, self.latin_font)
+        main_layout.addWidget(self.meaning_display)
+
+        self.next_button = QtWidgets.QPushButton(text="Next ⏭")
+        self.next_button.clicked.connect(self.randomize)
+        main_layout.addWidget(self.next_button)
+
+        self.setLayout(main_layout)
+
+    def randomize(self):
+        self.state.randomize_entry()
+        self.text_display.populate()
+        self.meaning_display.populate()
+
+
 def main() -> None:
-    state = State()
-
     app = QtWidgets.QApplication(sys.argv)
-    window = QtWidgets.QWidget(windowTitle="HSK Flashcards", windowIcon=QtGui.QIcon("data/字.png"))
-    main_layout = QtWidgets.QVBoxLayout()
 
-    latin_font = QtGui.QFont("Arial", pointSize=16)
-    character_font = QtGui.QFont("KaiTi", pointSize=80)
-
-    level_selector = LevelSelector(state)
-    main_layout.addWidget(level_selector)
-
-    text_display = TextDisplay(state, latin_font, character_font)
-    main_layout.addWidget(text_display, alignment=QtCore.Qt.AlignCenter)
-
-    meaning_display = MeaningDisplay(state, latin_font)
-    main_layout.addWidget(meaning_display)
-
-    def randomize():
-        state.randomize_entry()
-        text_display.populate()
-        meaning_display.populate()
-
-    next_button = QtWidgets.QPushButton(text="Next ⏭")
-    next_button.clicked.connect(randomize)
-    main_layout.addWidget(next_button)
-
-    window.setLayout(main_layout)
-    window.resize(16 * 16 * 2, 16 * 9 * 2)
+    window = MainWindow()
     window.show()
-
-    randomize()
 
     sys.exit(app.exec())
 
