@@ -6,6 +6,7 @@ from dataclasses import dataclass
 
 import pandas as pd
 from PySide6 import QtCore, QtWidgets, QtGui
+from PySide6.QtCore import Qt
 
 
 def clear_layout(layout: QtWidgets.QLayout) -> None:
@@ -111,7 +112,7 @@ class TextDisplayInner(QtWidgets.QWidget):
     def init_ui(self) -> None:
         self.layout = QtWidgets.QGridLayout()
         self.layout.setSizeConstraint(QtWidgets.QLayout.SetFixedSize)
-        self.layout.setAlignment(QtCore.Qt.AlignCenter)
+        self.layout.setAlignment(Qt.AlignCenter)
 
         self.setLayout(self.layout)
         self.populate()
@@ -124,11 +125,11 @@ class TextDisplayInner(QtWidgets.QWidget):
         for i, (character, pinyin) in enumerate(zip(entry.characters, entry.pinyin)):
             pinyin_label = QtWidgets.QLabel(pinyin)
             pinyin_label.setFont(self.latin_font)
-            pinyin_label.setAlignment(QtCore.Qt.AlignCenter)
+            pinyin_label.setAlignment(Qt.AlignCenter)
 
             character_label = QtWidgets.QLabel(character)
             character_label.setFont(self.character_font)
-            character_label.setAlignment(QtCore.Qt.AlignCenter)
+            character_label.setAlignment(Qt.AlignCenter)
 
             self.layout.addWidget(pinyin_label   , 0, i)
             self.layout.addWidget(character_label, 1, i)
@@ -153,7 +154,7 @@ class TextDisplay(QtWidgets.QWidget):
 
         self.hsk_display = QtWidgets.QLabel()
         self.hsk_display.setStyleSheet("color: green")
-        self.hsk_display.setAlignment(QtCore.Qt.AlignmentFlag.AlignTop | QtCore.Qt.AlignmentFlag.AlignRight)
+        self.hsk_display.setAlignment(Qt.AlignmentFlag.AlignTop | Qt.AlignmentFlag.AlignRight)
 
         layout.addWidget(self.inner_display, 0, 0)
         layout.addWidget(self.hsk_display, 0, 0)
@@ -181,7 +182,7 @@ class MeaningDisplay(QtWidgets.QWidget):
 
     def init_ui(self) -> None:
         self.layout = QtWidgets.QVBoxLayout()
-        self.layout.setAlignment(QtCore.Qt.AlignCenter)
+        self.layout.setAlignment(Qt.AlignCenter)
         self.setLayout(self.layout)
         self.populate()
 
@@ -193,7 +194,7 @@ class MeaningDisplay(QtWidgets.QWidget):
         for meaning in entry.meanings:
             meaning_label = QtWidgets.QLabel(text=meaning)
             meaning_label.setFont(self.latin_font)
-            meaning_label.setAlignment(QtCore.Qt.AlignCenter)
+            meaning_label.setAlignment(Qt.AlignCenter)
             self.layout.addWidget(meaning_label)
 
 
