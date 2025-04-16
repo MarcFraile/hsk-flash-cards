@@ -22,7 +22,7 @@ class State:
 
 
 def main() -> None:
-    data = pd.read_csv("hsk2.csv")
+    data = pd.read_csv("data/hsk2.csv")
     rng = random.Random()
 
     def get_entry(idx):
@@ -43,7 +43,7 @@ def main() -> None:
         update_view()
 
     app = QtWidgets.QApplication(sys.argv)
-    window = QtWidgets.QWidget(windowTitle="HSK Flashcards", windowIcon=QtGui.QIcon("字.png"))
+    window = QtWidgets.QWidget(windowTitle="HSK Flashcards", windowIcon=QtGui.QIcon("data/字.png"))
     main_layout = QtWidgets.QVBoxLayout()
 
     latin_font = QtGui.QFont("Arial", pointSize=16)

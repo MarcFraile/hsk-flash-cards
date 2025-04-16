@@ -11,7 +11,7 @@ def main() -> None:
 
     # ================================================================ #
     cli.section("Loading Data")
-    xl = pd.read_excel("Chinese language database _ 中文数据库.xlsx", sheet_name="All Characters (HSK 2.0)", usecols="B:O", skiprows=4, header=None)
+    xl = pd.read_excel("data/Chinese language database _ 中文数据库.xlsx", sheet_name="All Characters (HSK 2.0)", usecols="B:O", skiprows=4, header=None)
     cli.print("Read OK")
 
     # ================================================================ #
@@ -27,7 +27,7 @@ def main() -> None:
 
     # ================================================================ #
     cli.section("Saving Data")
-    subset.to_csv("hsk2.csv", index=False)
+    subset.to_csv("data/hsk2.csv", index=False)
     cli.print("Write OK")
 
 if __name__ == "__main__":
