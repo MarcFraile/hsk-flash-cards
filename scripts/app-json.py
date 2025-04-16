@@ -3,6 +3,7 @@
 
 import sys, random
 from dataclasses import dataclass
+from typing import Callable
 
 import pandas as pd
 from PySide6 import QtCore, QtWidgets, QtGui
@@ -33,6 +34,8 @@ class State:
     current_level : int
     current_entry : Entry
 
+    show_pinyin : bool
+
     def __init__(self):
         self.data = pd.read_csv("data/hsk-manual.csv")
         self.rng = random.Random()
@@ -40,6 +43,7 @@ class State:
 
         self.current_level = 1
         self.current_entry = self.get_random_entry()
+        self.show_pinyin = False
 
     def get_entry(self, idx: int) -> Entry:
         assert idx in self.data.index, f"Expected a valid index, but {idx=} not contained in {self.data.index=}"
@@ -123,15 +127,15 @@ class TextDisplayInner(QtWidgets.QWidget):
         entry = self.state.current_entry
 
         for i, (character, pinyin) in enumerate(zip(entry.characters, entry.pinyin)):
-            pinyin_label = QtWidgets.QLabel(pinyin)
-            pinyin_label.setFont(self.latin_font)
-            pinyin_label.setAlignment(Qt.AlignCenter)
+            if self.state.show_pinyin:
+                pinyin_label = QtWidgets.QLabel(pinyin)
+                pinyin_label.setFont(self.latin_font)
+                pinyin_label.setAlignment(Qt.AlignCenter)
+                self.layout.addWidget(pinyin_label   , 0, i)
 
             character_label = QtWidgets.QLabel(character)
             character_label.setFont(self.character_font)
             character_label.setAlignment(Qt.AlignCenter)
-
-            self.layout.addWidget(pinyin_label   , 0, i)
             self.layout.addWidget(character_label, 1, i)
 
 
@@ -189,6 +193,9 @@ class MeaningDisplay(QtWidgets.QWidget):
     def populate(self) -> None:
         clear_layout(self.layout)
 
+        if not self.state.show_pinyin:
+            return
+
         entry = self.state.current_entry
 
         for meaning in entry.meanings:
@@ -196,6 +203,57 @@ class MeaningDisplay(QtWidgets.QWidget):
             meaning_label.setFont(self.latin_font)
             meaning_label.setAlignment(Qt.AlignCenter)
             self.layout.addWidget(meaning_label)
+
+
+class ControlButtons(QtWidgets.QWidget):
+    state : State
+
+    next_button : QtWidgets.QPushButton
+
+    on_next              : Callable[[], None]
+    on_toggle_visibility : Callable[[], None]
+
+    icon_show : QtGui.QIcon
+    icon_hide : QtGui.QIcon
+    icon_play : QtGui.QIcon
+
+    def __init__(self, state: State, on_next: Callable[[], None], on_toggle_visibility: Callable[[], None]):
+        super().__init__()
+
+        self.state = state
+        self.on_next = on_next
+        self.on_toggle_visibility = on_toggle_visibility
+
+        self.init_ui()
+
+    def init_ui(self) -> None:
+        layout = QtWidgets.QHBoxLayout()
+        layout.setAlignment(Qt.AlignCenter)
+
+        self.icon_show = QtGui.QIcon("data/eye.png")
+        self.icon_hide = QtGui.QIcon("data/eye-slash.png")
+        self.icon_play = QtGui.QIcon("data/square-caret-right.png")
+
+        self.show_button = QtWidgets.QPushButton(text="Show")
+        self.show_button.setIcon(self.icon_show)
+        self.show_button.clicked.connect(self.on_toggle_visibility)
+        layout.addWidget(self.show_button)
+
+        self.next_button = QtWidgets.QPushButton(text="Next")
+        self.next_button.setIcon(self.icon_play)
+        self.next_button.clicked.connect(self.on_next)
+        layout.addWidget(self.next_button)
+
+        self.setLayout(layout)
+        self.update_ui()
+
+    def update_ui(self) -> None:
+        if self.state.show_pinyin:
+            self.show_button.setText("Hide")
+            self.show_button.setIcon(self.icon_hide)
+        else:
+            self.show_button.setText("Show")
+            self.show_button.setIcon(self.icon_show)
 
 
 class MainWindow(QtWidgets.QWidget):
@@ -206,7 +264,7 @@ class MainWindow(QtWidgets.QWidget):
     level_selector  : LevelSelector
     text_display    : TextDisplay
     meaning_display : MeaningDisplay
-    next_button     : QtWidgets.QPushButton
+    control_buttons : ControlButtons
 
     def __init__(self):
         super().__init__(windowTitle="HSK Flashcards", windowIcon=QtGui.QIcon("data/字.png"))
@@ -230,21 +288,34 @@ class MainWindow(QtWidgets.QWidget):
         self.meaning_display = MeaningDisplay(self.state, self.latin_font)
         main_layout.addWidget(self.meaning_display)
 
-        self.next_button = QtWidgets.QPushButton(text="Next ⏭")
-        self.next_button.clicked.connect(self.randomize)
-        main_layout.addWidget(self.next_button)
+        self.control_buttons = ControlButtons(state=self.state, on_next=self.randomize, on_toggle_visibility=self.toggle_pinyin)
+        main_layout.addWidget(self.control_buttons)
 
         self.setLayout(main_layout)
 
-    def randomize(self):
+    def randomize(self) -> None:
+        self.state.show_pinyin = False
         self.state.randomize_entry()
+        self.refresh()
+
+    def refresh(self) -> None:
         self.text_display.populate()
         self.meaning_display.populate()
+        self.control_buttons.update_ui()
 
-    def eventFilter(self, obj, event):
-        if event.type() == QtCore.QEvent.KeyPress and event.key() == Qt.Key_Space:
+    def toggle_pinyin(self) -> None:
+        self.state.show_pinyin = not self.state.show_pinyin
+        self.refresh()
+
+    def eventFilter(self, obj: QtCore.QObject, event: QtCore.QEvent) -> bool:
+        if event.type() == QtCore.QEvent.KeyPress and event.key() == Qt.Key_Return:
             self.randomize()
-            return True  # Prevent further processing
+            return True
+
+        if event.type() == QtCore.QEvent.KeyPress and event.key() == Qt.Key_Space:
+            self.toggle_pinyin()
+            return True
+
         return super().eventFilter(obj, event)
 
 
