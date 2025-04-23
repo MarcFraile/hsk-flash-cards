@@ -211,6 +211,7 @@ hanzi,level,frequency,pinyin,meanings
 早饭,1,,zǎo fàn,breakfast
 午饭,1,,wǔ fàn,lunch
 晚饭,1,,wǎn fàn,dinner; supper
+米,1,663,mǐ,rice
 米饭,1,10194,mǐ fàn,(cooked) rice
 饭店,1,,fàn diàn,restaurant
 汉语,1,13422,Hàn yǔ,Chinese language
@@ -354,6 +355,8 @@ A比BC,2,155,A bǐ B C,A is more C than B
 课,2,1517,kè,class; lesson
 哥哥,2,1655,gē ge,older brother
 咖啡,2,1698,kā fēi,coffee (loanword)
+咖啡店,2,,kā fēi diàn,coffe shop; café
+咖啡馆,2,,kā fēi guǎn,café; coffee shop
 考试,2,1718,kǎo shì,exam; to take an exam
 千,2,1728,qiān,thousand
 慢,2,1770,màn,slow
@@ -419,53 +422,19 @@ A比BC,2,155,A bǐ B C,A is more C than B
 对,2,,duì,for (preposition)
 回国,2,,huí guó,to go back to one's country
 啊,3,47,a,"(interjection showing surprise); (modal particle showing enthusiasm)"
-把,3,50,bà,handle
-把,3,50,bǎ,to hold; to grasp
-把,3,50,bǎ,to hold a baby in position to help it urinate or defecate
-把,3,50,bǎ,handlebar
-把,3,50,bǎ,"classifier: handful, bundle, bunch"
-把,3,50,bǎ,classifier for things with handles
-把,3,50,bǎ,(used to put the object before the verb: 把 + {noun} + {verb})
-被,3,54,bèi,quilt
-被,3,54,bèi,to cover (with)
-被,3,54,bèi,(literary) to suffer (a misfortune)
-被,3,54,bèi,"used to indicate passive voice (placed before the doer of the action like ""by"" in English passive-voice sentences, or, if the doer is not mentioned, before the verb)"
-被,3,54,bèi,"(since c. 2009) (sarcastic or jocular) used to indicate that the following word should be regarded as being in air quotes (as in 被旅游 to ""go on a trip"", for example)"
-自己,3,56,zì jǐ,oneself
-自己,3,56,zì jǐ,one's own
+把,3,50,bà,"handle; to hold; to grasp; (classifier: handful, bundle, bunch); classifier for things with handles"
+被,3,54,bèi,quilt; to cover (with); (indicator of passive voice)
+自己,3,56,zì jǐ,oneself; one's own
 用,3,79,yòng,to use; to employ; to have to
 如果,3,89,rú guǒ,if; in case; in the event that
-又,3,91,yòu,(once) again
-又,3,91,yòu,also
-又,3,91,yòu,both... and...
-又,3,91,yòu,and yet
-又,3,91,yòu,(used for emphasis) anyway
-只,3,98,zhī,grain that has begun to ripen
+又,3,91,yòu,"once again (past tense, compare 再); also"
+又A又B,3,91,yòu A yòu B,both A and B
 只,3,98,zhī,"classifier for birds and certain animals, one of a pair, some utensils, vessels etc"
-只,3,98,zhǐ,only
-只,3,98,zhǐ,merely
-只,3,98,zhǐ,just
-只,3,98,zhǐ,but
-只,3,98,zhǐ,variant of 只
-只,3,98,zhǐ,variant of 只
-更,3,127,gèng,more
-更,3,127,gèng,even more
-更,3,127,gèng,further
-更,3,127,gèng,still
-更,3,127,gèng,still more
-更,3,127,gēng,to change or replace
-更,3,127,gēng,to experience
-更,3,127,gēng,one of the five two-hour periods into which the night was formerly divided
-更,3,127,gēng,watch (e.g. of a sentry or guard)
+只,3,98,zhǐ,only; merely; just
+更,3,127,gèng,more; even more
+更,3,127,gēng,to change or replace; to experience
 需要,3,131,xū yào,to need; to want; to demand; to require
-需要,3,131,xū yào,needs
-地,3,132,de,-ly
-地,3,132,de,"structural particle: used before a verb or adjective, linking it to preceding modifying adverbial adjunct"
-地,3,132,dì,earth
-地,3,132,dì,ground
-地,3,132,dì,field
-地,3,132,dì,place
-地,3,132,dì,land
+地,3,132,dì,earth; ground; place; land
 才,3,133,cái,ability; talent
 才,3,133,cái,sb of a certain type
 才,3,133,cái,a capable individual
@@ -483,141 +452,40 @@ A比BC,2,155,A bǐ B C,A is more C than B
 跟,3,135,gēn,to
 跟,3,135,gēn,towards
 跟,3,135,gēn,and (joining two nouns)
-像,3,151,xiàng,to resemble
-像,3,151,xiàng,to be like
-像,3,151,xiàng,to look as if
-像,3,151,xiàng,such as
-像,3,151,xiàng,appearance
-像,3,151,xiàng,image
-像,3,151,xiàng,portrait
-像,3,151,xiàng,image under a mapping (math.)
-还是,3,160,hái shi,still (as before)
-还是,3,160,hái shi,had better
-还是,3,160,hái shi,unexpectedly
-还是,3,160,hái shi,or
+像,3,151,xiàng,to resemble; to be like; appearance; image
+还是,3,160,hái shi,still (as before); or
 认为,3,168,rèn wéi,to believe; to think; to consider; to feel
-应该,3,174,yīng gāi,ought to
-应该,3,174,yīng gāi,should
-应该,3,174,yīng gāi,must
-带,3,177,dài,band
-带,3,177,dài,belt
-带,3,177,dài,girdle
-带,3,177,dài,ribbon
-带,3,177,dài,tire
-带,3,177,dài,area
-带,3,177,dài,zone
-带,3,177,dài,region
-带,3,177,dài,to wear
-带,3,177,dài,to carry
-带,3,177,dài,to take along
-带,3,177,dài,to bear (i.e. to have)
-带,3,177,dài,to lead
-带,3,177,dài,to bring
-带,3,177,dài,to look after
-带,3,177,dài,to raise
+应该,3,174,yīng gāi,ought to; should; must
+带,3,177,dài,band; belt; tire
+带,3,177,dài,to bring; to carry
 位,3,177,wèi,position
 位,3,177,wèi,location
 位,3,177,wèi,place
 位,3,177,wèi,seat
 位,3,177,wèi,classifier for people (honorific)
-位,3,177,wèi,classifier for binary bits (e.g. 十六位 16-bit or 2 bytes)
-位,3,177,wèi,(physics) potential
-种,3,179,zhòng,to plant
-种,3,179,zhòng,to grow
-种,3,179,zhòng,to cultivate
-种,3,179,zhǒng,seed
-种,3,179,zhǒng,species
-种,3,179,zhǒng,kind
-种,3,179,zhǒng,type
-种,3,179,zhǒng,"classifier for types, kinds, sorts"
-发现,3,189,fā xiàn,to notice; to become aware of
-发现,3,189,fā xiàn,to discover; to find; to detect
-发现,3,189,fā xiàn,a discovery
-一定,3,198,yī dìng,surely
-一定,3,198,yī dìng,certainly
-一定,3,198,yī dìng,necessarily
-一定,3,198,yī dìng,fixed
-一定,3,198,yī dìng,a certain (extent etc)
-一定,3,198,yī dìng,given
-一定,3,198,yī dìng,particular
-一定,3,198,yī dìng,must
-一直,3,203,yī zhí,straight (in a straight line)
-一直,3,203,yī zhí,continuously; always; all the way through
+种,3,179,zhǒng,"kind; type; (classifier for types, kinds, sorts)"
+发现,3,189,fā xiàn,to discover; to notice; to become aware of; a discovery
+一定,3,198,yī dìng,surely; certainly;must
+一直,3,203,yī zhí,straight (in a straight line); continuously; always; all the way through
 为了,3,229,wèi le,for; for the purpose of; in order to
-一样,3,235,yī yàng,same
-一样,3,235,yī yàng,like
-一样,3,235,yī yàng,equal to
-一样,3,235,yī yàng,the same as
-一样,3,235,yī yàng,just like
+一样,3,235,yī yàng,the same as; like; equal to
 世界,3,238,shì jiè,world
-而且,3,239,ér qiě,(not only ...) but also
-而且,3,239,ér qiě,moreover
-而且,3,239,ér qiě,in addition
-而且,3,239,ér qiě,furthermore
-重要,3,240,zhòng yào,important
-重要,3,240,zhòng yào,significant
-重要,3,240,zhòng yào,major
-必须,3,241,bì xū,to have to
-必须,3,241,bì xū,must
-必须,3,241,bì xū,compulsory
-必须,3,241,bì xū,necessarily
+世界杯,3,238,shì jiè bēi,World Cup
+而且,3,239,ér qiě,(not only ...) but also; moreover; in addition; furthermore
+重要,3,240,zhòng yào,important; significant; major
+必须,3,241,bì xū,to have to; must; compulsory; necessarily
 地方,3,254,dì fang,place; area; region
-老,3,266,lǎo,old (of people)
-老,3,266,lǎo,prefix used before the surname of a person or a numeral indicating the order of birth of the children in a family or to indicate affection or familiarity
-老,3,266,lǎo,venerable (person)
-老,3,266,lǎo,experienced
-老,3,266,lǎo,of long standing
-老,3,266,lǎo,always
-老,3,266,lǎo,all the time
-老,3,266,lǎo,of the past
-老,3,266,lǎo,very
-老,3,266,lǎo,outdated
-老,3,266,lǎo,(of meat etc) tough
-其他,3,267,qí tā,other
-其他,3,267,qí tā,(sth or sb) else
-其他,3,267,qí tā,the rest
-比赛,3,275,bǐ sài,competition (sports etc)
-比赛,3,275,bǐ sài,match
-比赛,3,275,bǐ sài,to compete
+老,3,266,lǎo,old (of people); venerable (person); of the past
+其他,3,267,qí tā,other; (sth or sb) else; the rest
+比赛,3,275,bǐ sài,competition (sports etc); match; to compete
 然后,3,275,rán hòu,then; after that; afterwards
-担心,3,277,dān xīn,anxious
-担心,3,277,dān xīn,worried
-担心,3,277,dān xīn,uneasy
-担心,3,277,dān xīn,to worry
-担心,3,277,dān xīn,to be anxious
-条,3,277,tiáo,strip
-条,3,277,tiáo,item
-条,3,277,tiáo,article
-条,3,277,tiáo,clause (of law or treaty)
-条,3,277,tiáo,"classifier for long thin things (ribbon, river, road, trousers etc)"
-放,3,280,fàng,to put
-放,3,280,fàng,to place
-放,3,280,fàng,to release
-放,3,280,fàng,to free
-放,3,280,fàng,to let go
-放,3,280,fàng,to let out
-放,3,280,fàng,to set off (fireworks)
-拿,3,287,ná,old variant of 拿
-拿,3,287,ná,variant of 拿
-拿,3,287,ná,to hold
-拿,3,287,ná,to seize
-拿,3,287,ná,to catch
-拿,3,287,ná,to apprehend
-拿,3,287,ná,to take
-拿,3,287,ná,(used in the same way as 把: to mark the following noun as a direct object)
+担心,3,277,dān xīn,to worry; to be anxious; anxious; worried
+条,3,277,tiáo,"(classifier for long thin things: ribbon, river, road, trousers, etc.); strip"
+放,3,280,fàng,to put; to place
+拿,3,287,ná,to hold; to seize; to catch
 为什么,3,299,wèi shén me,why?; for what reason?
-先,3,306,xiān,early
-先,3,306,xiān,prior
-先,3,306,xiān,former
-先,3,306,xiān,in advance
-先,3,306,xiān,first
-关系,3,318,guān xi,relation
-关系,3,318,guān xi,relationship
-关系,3,318,guān xi,to concern
-关系,3,318,guān xi,to affect
-关系,3,318,guān xi,to have to do with
-关系,3,318,guān xi,guanxi
-关系,3,318,guān xi,variant of 关系
+先,3,306,xiān,first; prior; former
+关系,3,318,guān xi,relationship; relation
 出现,3,323,chū xiàn,to appear
 出现,3,323,chū xiàn,to arise
 出现,3,323,chū xiàn,to emerge
@@ -720,22 +588,9 @@ A比BC,2,155,A bǐ B C,A is more C than B
 接,3,425,jiē,to take one's turn on duty
 接,3,425,jiē,to take over for sb
 相信,3,431,xiāng xìn,to be convinced (that sth is true); to believe; to accept sth as true
-花,3,435,Huā,surname Hua
-花,3,435,huā,flower
-花,3,435,huā,blossom
-花,3,435,huā,fancy pattern
-花,3,435,huā,florid
-花,3,435,huā,"to spend (money, time)"
-花,3,435,huā,(coll.) lecherous
-花,3,435,huā,lustful
-花,3,435,huā,old variant of 花
-花,3,435,huā,variant of 花
-花,3,435,huā,flower
-花,3,435,huā,blossom
-花,3,435,huā,also pr. [wěi]
+花,3,435,huā,"flower; blossom; to spend (money, time)"
 虽然,3,440,suī rán,although; even though
 解决,3,458,jiě jué,to solve; to resolve; to settle (a problem)
-解决,3,458,jiě jué,"to eliminate; to wipe out (an enemy, bandits etc)"
 关于,3,478,guān yú,pertaining to
 关于,3,478,guān yú,concerning
 关于,3,478,guān yú,with regard to
@@ -757,14 +612,7 @@ A比BC,2,155,A bǐ B C,A is more C than B
 特别,3,541,tè bié,very; especially; particularly
 特别,3,541,tè bié,expressly; for a specific purpose
 特别,3,541,tè bié,(often followed by 是) in particular
-难,3,544,nàn,disaster
-难,3,544,nàn,distress
-难,3,544,nàn,to scold
-难,3,544,nán,difficult (to...)
-难,3,544,nán,problem
-难,3,544,nán,difficulty
-难,3,544,nán,difficult
-难,3,544,nán,not good
+难,3,544,nán,difficult; difficulty; problem; not good
 注意,3,547,zhù yì,to take note of; to pay attention to
 讲,3,555,jiǎng,to speak
 讲,3,555,jiǎng,to explain
@@ -774,11 +622,8 @@ A比BC,2,155,A bǐ B C,A is more C than B
 讲,3,555,jiǎng,as far as sth is concerned
 讲,3,555,jiǎng,speech
 讲,3,555,jiǎng,lecture
-万,3,557,Wàn,surname Wan
 离开,3,557,lí kāi,to depart; to leave
-万,3,557,mò,used in 俟
-万,3,557,wàn,ten thousand
-万,3,557,wàn,a great number
+万,3,557,wàn,ten thousand; a great number
 以为,3,567,yǐ wéi,to think (i.e. to take it to be true that ...) (Usually there is an implication that the notion is mistaken – except when expressing one's own current opinion.)
 越,3,574,Yuè,generic word for peoples or states of south China or south Asia at different historical periods
 越,3,574,Yuè,abbr. for Vietnam 越南
@@ -794,11 +639,7 @@ A比BC,2,155,A bǐ B C,A is more C than B
 影响,3,598,yǐng xiǎng,to disturb
 游戏,3,603,yóu xì,game
 游戏,3,603,yóu xì,to play
-马,3,605,Mǎ,surname Ma
-马,3,605,Mǎ,abbr. for Malaysia 马来西亚
 马,3,605,mǎ,horse
-马,3,605,mǎ,horse or cavalry piece in Chinese chess
-马,3,605,mǎ,knight in Western chess
 比较,3,607,bǐ jiào,to compare
 比较,3,607,bǐ jiào,to contrast
 比较,3,607,bǐ jiào,comparatively
@@ -806,32 +647,24 @@ A比BC,2,155,A bǐ B C,A is more C than B
 比较,3,607,bǐ jiào,quite
 比较,3,607,bǐ jiào,comparison
 最近,3,612,zuì jìn,recently; soon
-换,3,618,huàn,to exchange
-换,3,618,huàn,to change (clothes etc)
-换,3,618,huàn,to substitute
-换,3,618,huàn,to switch
-换,3,618,huàn,to convert (currency)
+换,3,618,huàn,"to change (clothes, etc.); to exchange; to substitute"
 终于,3,625,zhōng yú,at last
 终于,3,625,zhōng yú,in the end
 终于,3,625,zhōng yú,finally
 终于,3,625,zhōng yú,eventually
 脸,3,629,liǎn,face
-口,3,637,kǒu,mouth
-口,3,637,kǒu,"classifier for things with mouths (people, domestic animals, cannons, wells etc)"
-口,3,637,kǒu,classifier for bites or mouthfuls
+口,3,637,kǒu,"mouth; (classifier for things with mouths: people, domestic animals, cannons, wells, etc.); (classifier for bites or mouthfuls)"
 除了,3,638,chú le,besides
 除了,3,638,chú le,apart from (... also...)
 除了,3,638,chú le,in addition to
 除了,3,638,chú le,except (for)
 总是,3,638,zǒng shì,always
-双,3,642,Shuāng,surname Shuang
 双,3,642,shuāng,two
 双,3,642,shuāng,double
 双,3,642,shuāng,pair
 双,3,642,shuāng,both
 双,3,642,shuāng,even (number)
 突然,3,644,tū rán,sudden; abrupt; unexpected
-段,3,647,Duàn,surname Duan
 段,3,647,duàn,paragraph
 段,3,647,duàn,section
 段,3,647,duàn,segment
@@ -840,24 +673,15 @@ A比BC,2,155,A bǐ B C,A is more C than B
 检查,3,659,jiǎn chá,inspection
 检查,3,659,jiǎn chá,to examine
 检查,3,659,jiǎn chá,to inspect
-米,3,663,Mǐ,surname Mi
-米,3,663,mǐ,rice
 米,3,663,mǐ,meter (classifier)
 容易,3,664,róng yì,easy; straightforward
-容易,3,664,róng yì,likely; liable to; apt to
 明白,3,676,míng bai,clear; obvious; to understand to realize
-根据,3,694,gēn jù,according to
-根据,3,694,gēn jù,based on
-根据,3,694,gēn jù,basis
-根据,3,694,gēn jù,foundation
+根据,3,694,gēn jù,according to; based on; basis; foundation
 记得,3,699,jì de,to remember
 辆,3,699,liàng,classifier for vehicles
 简单,3,726,jiǎn dān,simple
 简单,3,726,jiǎn dān,not complicated
 半,3,727,bàn,half
-半,3,727,bàn,semi-
-半,3,727,bàn,incomplete
-半,3,727,bàn,(after a number) and a half
 愿意,3,738,yuàn yì,to wish
 愿意,3,738,yuàn yì,to want
 愿意,3,738,yuàn yì,ready
@@ -885,16 +709,10 @@ A比BC,2,155,A bǐ B C,A is more C than B
 一般,3,798,yī bān,general
 一般,3,798,yī bān,generally
 一般,3,798,yī bān,in general
-可爱,3,799,kě ài,adorable
-可爱,3,799,kě ài,cute
-可爱,3,799,kě ài,lovely
+可爱,3,799,kě ài,adorable; cute; lovely
 新闻,3,805,xīn wén,news
-声音,3,841,shēng yīn,voice
-声音,3,841,shēng yīn,sound
-马上,3,847,mǎ shàng,at once
-马上,3,847,mǎ shàng,right away
-马上,3,847,mǎ shàng,immediately
-马上,3,847,mǎ shàng,on horseback (i.e. by military force)
+声音,3,841,shēng yīn,voice; sound
+马上,3,847,mǎ shàng,right away; immediately; on horseback (i.e. by military force)
 表示,3,854,biǎo shì,to express
 表示,3,854,biǎo shì,to show
 表示,3,854,biǎo shì,to say
@@ -1121,10 +939,7 @@ A比BC,2,155,A bǐ B C,A is more C than B
 旧,3,1787,jiù,former
 旧,3,1787,jiù,worn (with age)
 司机,3,1804,sī jī,chauffeur; driver
-黄,3,1809,Huáng,surname Huang or Hwang
-黄,3,1809,huáng,yellow
-黄,3,1809,huáng,pornographic
-黄,3,1809,huáng,to fall through
+黄,3,1809,huáng,yellow; pornographic; to fall through; surname Huang
 经理,3,1838,jīng lǐ,manager
 经理,3,1838,jīng lǐ,director
 兴趣,3,1847,xìng qù,interest (desire to know about sth)
