@@ -11,7 +11,7 @@ hanzi,level,frequency,pinyin,meanings
 这,1,11,zhè,this; these
 这儿,1,,zhèr -,here
 个,1,19,gè,(classifier used before a noun that has no specific classifier)
-和,1,19,hé,and; surname He
+和,1,19,hé,and
 人,1,19,rén,person; people
 们,1,,men,(plural indicator for people)
 我们,1,19,wǒ men,we; us
@@ -32,7 +32,7 @@ hanzi,level,frequency,pinyin,meanings
 你的,1,,nǐ de,your; yours
 他的,1,,tā de,his
 她的,1,,tā de,hers
-想,1,44,xiǎng,to think; to believe; to desire
+想,1,44,xiǎng,to desire; to whish; to think; to believe
 能,1,46,néng,can; to be able to; might possibly
 那,1,48,nà,that
 那儿,1,,nàr -,there
@@ -44,7 +44,7 @@ hanzi,level,frequency,pinyin,meanings
 没,1,63,méi, have not; not
 大,1,66,dà,big; large; great; older (than another person)
 下,1,70,xià,down; downwards; below; later
-里,1,75,lǐ,inside; Li (surname); 500m
+里,1,75,lǐ,inside; 500m
 面,1,,miàn,side; surface; (measure word for flat surfaces)
 里面,1,,lǐ miàn,inside
 这里,1,,zhè lǐ,here
@@ -156,6 +156,7 @@ hanzi,level,frequency,pinyin,meanings
 冷,1,1027,lěng,cold
 飞机,1,1067,fēi jī,airplane
 猫,1,1150,māo,cat
+只,1,98,zhī,(classifier word for birds and animals)
 电话,1,,diàn huà,a telephone call
 打电话,1,1218,dǎ diàn huà,to make a telephone call
 外面,1,,wài mian,outside
@@ -430,7 +431,6 @@ A比BC,2,155,A bǐ B C,A is more C than B
 如果,3,89,rú guǒ,if; in case; in the event that
 又,3,91,yòu,"once again (past tense, compare 再); also"
 又A又B,3,91,yòu A yòu B,both A and B
-只,3,98,zhī,(classifier word for birds and animals)
 只,3,98,zhǐ,only; merely; just
 更,3,127,gèng,more; even more
 更,3,127,gēng,to change or replace; to experience
@@ -482,13 +482,10 @@ A比BC,2,155,A bǐ B C,A is more C than B
 过去,3,353,guò qù,to pass by
 参加,3,355,cān jiā,to participate; to take part; to join
 国家,3,356,guó jiā,country; nation; state
+国外,3,,guó wài,abroad
 决定,3,366,jué dìng,to decide (to do something); to resolve; decision
 分,3,372,fēn,0.01 yuan (unit of money)
-选择,3,373,xuǎn zé,to select
-选择,3,373,xuǎn zé,to pick
-选择,3,373,xuǎn zé,choice
-选择,3,373,xuǎn zé,option
-选择,3,373,xuǎn zé,alternative
+选择,3,373,xuǎn zé,to select; to pick; choice; option
 或者,3,382,huò zhě,or; possibly; perhaps
 机会,3,393,jī huì,opportunity; chance; occasion
 别人,3,397,bié ren,other people; others; other person
@@ -504,22 +501,8 @@ A比BC,2,155,A bǐ B C,A is more C than B
 使,3,400,shǐ,messenger
 其实,3,405,qí shí,actually; in fact; really
 以后,3,407,yǐ hòu,after; later; afterwards
-要求,3,409,yāo qiú,to request
-要求,3,409,yāo qiú,to require
-要求,3,409,yāo qiú,requirement
-要求,3,409,yāo qiú,to stake a claim
-要求,3,409,yāo qiú,to ask
-要求,3,409,yāo qiú,to demand
-信,3,419,xìn,letter
-信,3,419,xìn,mail
-信,3,419,xìn,to trust
-信,3,419,xìn,to believe
-信,3,419,xìn,to profess faith in
-信,3,419,xìn,truthful
-信,3,419,xìn,confidence
-信,3,419,xìn,trust
-信,3,419,xìn,at will
-信,3,419,xìn,at random
+要求,3,409,yāo qiú,to request; to require; requirement
+信,3,419,xìn,letter; mail; to trust; trust
 当然,3,423,dāng rán,certainly; of course; without doubt
 接,3,425,jiē,to receive
 接,3,425,jiē,to answer (the phone)
@@ -534,29 +517,16 @@ A比BC,2,155,A bǐ B C,A is more C than B
 花,3,435,huā,"flower; blossom; to spend (money, time)"
 虽然,3,440,suī rán,although; even though
 解决,3,458,jiě jué,to solve; to resolve; to settle (a problem)
-关于,3,478,guān yú,pertaining to
-关于,3,478,guān yú,concerning
-关于,3,478,guān yú,with regard to
-关于,3,478,guān yú,about
-关于,3,478,guān yú,a matter of
+关于,3,478,guān yú,pertaining to; concerning; with regard to
 完成,3,486,wán chéng,to complete; to accomplish
 结束,3,498,jié shù,to end; to conclude; termination
 努力,3,505,nǔ lì,to make an effort; to try hard; hard-working; conscientious
 以前,3,524,yǐ qián,before; formerly; previous
-办法,3,538,bàn fǎ,means
-办法,3,538,bàn fǎ,method
-办法,3,538,bàn fǎ,way (of doing sth)
+办法,3,538,bàn fǎ,means; method; way (of doing sth)
 特别,3,541,tè bié,very; especially; particularly
 难,3,544,nán,difficult; difficulty; problem; not good
 注意,3,547,zhù yì,to take note of; to pay attention to
-讲,3,555,jiǎng,to speak
-讲,3,555,jiǎng,to explain
-讲,3,555,jiǎng,to negotiate
-讲,3,555,jiǎng,to emphasize
-讲,3,555,jiǎng,to be particular about
-讲,3,555,jiǎng,as far as sth is concerned
-讲,3,555,jiǎng,speech
-讲,3,555,jiǎng,lecture
+讲,3,555,jiǎng,to speak; to explain; speech; lecture
 离开,3,557,lí kāi,to depart; to leave
 万,3,557,wàn,ten thousand; a great number
 以为,3,567,yǐ wéi,to think (i.e. to take it to be true that ...) (Usually there is an implication that the notion is mistaken – except when expressing one's own current opinion.)
@@ -566,24 +536,14 @@ A比BC,2,155,A bǐ B C,A is more C than B
 影响,3,598,yǐng xiǎng,influence; effect; to influence; to affect (usually adversely)
 游戏,3,603,yóu xì,game; to play
 马,3,605,mǎ,horse
-比较,3,607,bǐ jiào,to compare
-比较,3,607,bǐ jiào,to contrast
-比较,3,607,bǐ jiào,comparatively
-比较,3,607,bǐ jiào,relatively
-比较,3,607,bǐ jiào,quite
-比较,3,607,bǐ jiào,comparison
+比较,3,607,bǐ jiào,to compare; to contrast; comparatively; relatively
 最近,3,612,zuì jìn,recently; soon
 换,3,618,huàn,"to change (clothes, etc.); to exchange; to substitute"
-终于,3,625,zhōng yú,at last
-终于,3,625,zhōng yú,in the end
-终于,3,625,zhōng yú,finally
-终于,3,625,zhōng yú,eventually
+终于,3,625,zhōng yú,at last; in the end; finally; eventually
 脸,3,629,liǎn,face
 口,3,637,kǒu,"mouth; (classifier for things with mouths: people, domestic animals, cannons, wells, etc.); (classifier for bites or mouthfuls)"
-除了,3,638,chú le,besides
-除了,3,638,chú le,apart from (... also...)
-除了,3,638,chú le,in addition to
-除了,3,638,chú le,except (for)
+除了,3,638,chú le,besides; in addition to; except (for)
+除了A还B,3,638,chú le A hái B,"apart from A, also B"
 总是,3,638,zǒng shì,always
 双,3,642,shuāng,pair; (measure word for pairs: 筷子).
 突然,3,644,tū rán,sudden; abrupt; unexpected
@@ -606,11 +566,9 @@ A比BC,2,155,A bǐ B C,A is more C than B
 清楚,3,766,qīng chu,distinct
 清楚,3,766,qīng chu,to understand thoroughly
 清楚,3,766,qīng chu,to be clear about
-照片,3,766,zhào piàn,photograph
-照片,3,766,zhào piàn,picture
+照片,3,766,zhào piàn,photograph; picture
 银行,3,769,yín háng,bank
 故事,3,772,gù shi,narrative; story; tale
-故事,3,772,gù shì,old practice
 一般,3,798,yī bān,same
 一般,3,798,yī bān,ordinary
 一般,3,798,yī bān,so-so
@@ -637,34 +595,18 @@ A比BC,2,155,A bǐ B C,A is more C than B
 敢,3,902,gǎn,to dare; daring
 会议,3,928,huì yì,meeting; conference
 经常,3,940,jīng cháng,frequently; constantly; regularly; often
+常常,2,,cháng cháng,frequently; usually; often
 低,3,951,dī,low; beneath; to lower (one's head)
 节目,3,951,jié mù,program
 健康,3,952,jiàn kāng,health; healthy
-作用,3,955,zuò yòng,to act on
-作用,3,955,zuò yòng,to affect
-作用,3,955,zuò yòng,action
-作用,3,955,zuò yòng,function
-作用,3,955,zuò yòng,activity
-作用,3,955,zuò yòng,impact
-作用,3,955,zuò yòng,result
-作用,3,955,zuò yòng,effect
-作用,3,955,zuò yòng,purpose
-作用,3,955,zuò yòng,intent
-作用,3,955,zuò yòng,"(suffix) -ation, -tion etc, as in 用, inhibition"
+作用,3,955,zuò yòng,to act on; to affect; action; effect
 西,3,958,xī,west; the West
-差,3,968,chà,different; wrong; mistaken
-差,3,968,chà,to fall short; to lack; not up to standard; inferior
-差,3,968,chā,difference; discrepancy
+差,3,968,chà,different; wrong; mistaken; to lack; inferior; difference; discrepancy
 差,3,968,chāi,to send (on an errand); job; official post
 结婚,3,982,jié hūn,to marry; to get married
 短,3,983,duǎn,short (in length); brief
 同意,3,985,tóng yì,to agree; to consent; to approve
-教,3,988,jiào,religion
-教,3,988,jiào,teaching
-教,3,988,jiào,to make
-教,3,988,jiào,to cause
-教,3,988,jiào,to tell
-教,3,988,jiāo,to teach
+教,3,988,jiāo,to teach; teaching
 几乎,3,1001,jī hū,almost; nearly; practically
 附近,3,1020,fù jìn,nearby; neighboring; neighborhood
 认真,3,1020,rèn zhēn,conscientious; earnest; serious
@@ -672,7 +614,6 @@ A比BC,2,155,A bǐ B C,A is more C than B
 脚,3,1024,jiǎo,leg (of an animal or an object)
 脚,3,1024,jiǎo,base (of an object)
 脚,3,1024,jiǎo,classifier for kicks
-脚,3,1024,jué,role (variant of 角)
 主要,3,1031,zhǔ yào,main; primary; principal
 遇到,3,1063,yù dào,to meet; to run into; to come across
 年轻,3,1100,nián qīng,young
@@ -682,25 +623,15 @@ A比BC,2,155,A bǐ B C,A is more C than B
 关,3,1129,guān,to close; to shut; to turn off
 刚才,3,1149,gāng cái,just now; a moment ago
 办公室,3,1162,bàn gōng shì,office; bureau
-环境,3,1171,huán jìng,environment
-环境,3,1171,huán jìng,circumstances
-环境,3,1171,huán jìng,surroundings
-环境,3,1171,huán jìng,ambient
+环境,3,1171,huán jìng,environment; circumstances; surroundings; ambient
 关心,3,1190,guān xīn,to be concerned about; to care about
 祝,3,1197,zhù,"to wish (sb bon voyage, happy birthday etc); to pray for"
-层,3,1202,céng,to pile on top of one another
-层,3,1202,céng,layer; stratum
-层,3,1202,céng,floor (of a building); story
-层,3,1202,céng,(math.) sheaf
-层,3,1202,céng,classifier for layers
+层,3,1202,céng,to pile on top of one another; layer; stratum; (classifier for layers)
 腿,3,1216,tuǐ,leg
 班,3,1238,bān,team; class; grade; work shift
 坏,3,1239,huài,bad; spoiled; broken; to break down
-一边,3,1241,yī biān,one side
-一边,3,1241,yī biān,either side
-一边,3,1241,yī biān,on the one hand
-一边,3,1241,yī biān,on the other hand
-一边,3,1241,yī biān,doing while
+一边,3,1241,yī biān,one side; either side
+一边A一边B,3,1241,yī biān A yī biān B,"on one hand A, on the other hand B"
 鞋,3,1249,xié,shoe
 习惯,3,1251,xí guàn,habit; custom; to be used to
 变化,3,1262,biàn huà,change; variation; to change; to vary
@@ -712,9 +643,7 @@ A比BC,2,155,A bǐ B C,A is more C than B
 举行,3,1431,jǔ xíng,"to hold (a meeting, ceremony etc)"
 动物,3,1438,dòng wù,animal
 饿,3,1477,è,to be hungry
-树,3,1481,shù,tree
-树,3,1481,shù,to cultivate
-树,3,1481,shù,to set up
+树,3,1481,shù,tree; to cultivate; to set up
 水平,3,1490,shuǐ píng,standard; level (of achievement)
 借,3,1495,jiè,to lend; to borrow
 借,3,1495,jiè,by means of
@@ -725,76 +654,42 @@ A比BC,2,155,A bǐ B C,A is more C than B
 害怕,3,1536,hài pà,to be scared; to be afraid
 鸟,3,1593,niǎo,bird
 蓝,3,1615,lán,blue
-照顾,3,1631,zhào gu,to take care of
-照顾,3,1631,zhào gu,to show consideration
-照顾,3,1631,zhào gu,to attend to
-照顾,3,1631,zhào gu,to look after
+照顾,3,1631,zhào gu,to look after; to take care of; to attend to; to show consideration
 文化,3,1632,wén huà,culture; civilization; cultural
 疼,3,1641,téng,(it) hurts; sore
-奇怪,3,1655,qí guài,strange
-奇怪,3,1655,qí guài,odd
-奇怪,3,1655,qí guài,to marvel
-奇怪,3,1655,qí guài,to be baffled
+奇怪,3,1655,qí guài,strange; odd; to marvel; to be baffled
 礼物,3,1673,lǐ wù,gift; present
 南,3,1709,nán,south
 提高,3,1724,tí gāo,to raise; to increase; to improve
 满意,3,1761,mǎn yì,pleased; satisfied; to one's satisfaction
 旧,3,1787,jiù,old; worn (with age)
 司机,3,1804,sī jī,chauffeur; driver
-黄,3,1809,huáng,yellow; pornographic; to fall through; surname Huang
+黄,3,1809,huáng,yellow; pornographic; to fall through
 经理,3,1838,jīng lǐ,manager; director
-兴趣,3,1847,xìng qù,interest (desire to know about sth)
-兴趣,3,1847,xìng qù,interest (thing in which one is interested); hobby
+兴趣,3,1847,xìng qù,interest (desire to know about sth); interest (thing in which one is interested); hobby
 帮忙,3,1860,bāng máng,to help; to lend a hand; to do a favor
 电子,3,1874,diàn zǐ,electronic
 见面,3,1876,jiàn miàn,to meet; to see each other
 成绩,3,1888,chéng jì,achievement; grades
 中间,3,1889,zhōng jiān,in the middle; between; during; in the meantime
 聪明,3,1918,cōng ming,intelligent; clever; smart
-多么,3,1940,duō me,how (wonderful etc)
-多么,3,1940,duō me,what (a great idea etc)
-多么,3,1940,duō me,however (difficult it may be etc)
-多么,3,1940,duō me,(in interrogative sentences) how (much etc)
-多么,3,1940,duō me,to what extent
+多么,3,1940,duō me,how (wonderful)!; what (a great idea)!; how (much)?; to what extent?
 灯,3,2001,dēng,light; lamp
 太阳,3,2001,tài yang,sun
-方便,3,2014,fāng biàn,convenient
-方便,3,2014,fāng biàn,suitable
-方便,3,2014,fāng biàn,to facilitate
-方便,3,2014,fāng biàn,to make things easy
-方便,3,2014,fāng biàn,having money to spare
-方便,3,2014,fāng biàn,(euphemism) to relieve oneself
-糖,3,2036,táng,sugar
-糖,3,2036,táng,sweets
-糖,3,2036,táng,candy
-相同,3,2110,xiāng tóng,identical
-相同,3,2110,xiāng tóng,same
-生气,3,2113,shēng qì,to get angry
-生气,3,2113,shēng qì,to take offense
-生气,3,2113,shēng qì,angry
-生气,3,2113,shēng qì,vitality
-生气,3,2113,shēng qì,liveliness
+方便,3,2014,fāng biàn,convenient; suitable; to facilitate; to make things easy
+糖,3,2036,táng,sugar; sweets; candy
+相同,3,2110,xiāng tóng,identical; same
+生气,3,2113,shēng qì,to get angry; to take offense; angry; vitality
 公园,3,2134,gōng yuán,park (for public recreation)
-热情,3,2149,rè qíng,cordial
-热情,3,2149,rè qíng,enthusiastic
-热情,3,2149,rè qíng,passion
-热情,3,2149,rè qíng,passionate
-热情,3,2149,rè qíng,passionately
+热情,3,2149,rè qíng,passion; passionate; cordial; enthusiastic
 一会儿,3,2207,yī huìr -,a moment; a while; in a moment
 骑,3,2231,qí,"to ride (a horse, bike etc)"
 河,3,2245,hé,river
-搬,3,2254,bān,to move (i.e. relocate oneself)
-搬,3,2254,bān,to move (sth relatively heavy or bulky)
-搬,3,2254,bān,to shift
-搬,3,2254,bān,to copy indiscriminately
+搬,3,2254,bān,to move (to a new residence); to move (something heavy or bulky)
 同事,3,2337,tóng shì,colleague; co-worker
 舒服,3,2343,shū fu,comfortable; feeling well
 体育,3,2354,tǐ yù,sports; physical education
-角,3,2370,jiǎo,angle
-角,3,2370,jiǎo,corner
-角,3,2370,jiǎo,horn
-角,3,2370,jiǎo,horn-shaped
-角,3,2370,jiǎo,"unit of money equal to 0.1 yuan, or 10 cents (a dime)"
+角,3,2370,jiǎo,"unit of money equal to 10 cents of a yuan"
 角,3,2370,jué,to compete
 胖,3,2396,pàng,fat; plump
 干净,3,2430,gān jìng,clean; neat
@@ -807,10 +702,7 @@ A比BC,2,155,A bǐ B C,A is more C than B
 绿,3,2608,lu:4,green
 啤酒,3,2622,pí jiǔ,beer
 蛋糕,3,2650,dàn gāo,cake
-新鲜,3,2651,xīn xiān,"fresh (experience, food etc)"
-新鲜,3,2651,xīn xiān,freshness
-新鲜,3,2651,xīn xiān,novel
-新鲜,3,2651,xīn xiān,uncommon
+新鲜,3,2651,xīn xiān,"fresh (experience, food, etc.); novel; uncommon"
 难过,3,2714,nán guò,to feel sad; to feel unwell; (of life) to be difficult
 客人,3,2750,kè rén,visitor; guest; customer
 奶奶,3,2809,nǎi nai,farmor
@@ -835,19 +727,11 @@ A比BC,2,155,A bǐ B C,A is more C than B
 节日,3,3477,jié rì,holiday; festival
 鼻子,3,3484,bí zi,nose
 叔叔,3,3510,shū shu,father's younger brother
-叔叔,3,3510,shū shu,uncle
-叔叔,3,3510,shū shu,Taiwan pr. [shú shu]
 洗澡,3,3512,xǐ zǎo,to bathe; to take a shower
 地图,3,3548,dì tú,map
 帽子,3,3553,mào zi,hat; cap
 街道,3,3604,jiē dào,street
-街道,3,3604,jiē dào,subdistrict
-街道,3,3604,jiē dào,residential district
-感冒,3,3621,gǎn mào,to catch cold
-感冒,3,3621,gǎn mào,(common) cold
-感冒,3,3621,gǎn mào,(coll.) to be interested in (often used in the negative)
-感冒,3,3621,gǎn mào,(Tw) to detest
-感冒,3,3621,gǎn mào,can't stand
+感冒,3,3621,gǎn mào,to catch cold; (common) cold
 迟到,3,3667,chí dào,to arrive late
 刻,3,3756,kè,quarter (hour)
 刻,3,3756,kè,moment
@@ -856,138 +740,60 @@ A比BC,2,155,A bǐ B C,A is more C than B
 刻,3,3756,kè,to cut
 刻,3,3756,kè,oppressive
 刻,3,3756,kè,classifier for short time intervals
-锻炼,3,3764,duàn liàn,to toughen
-锻炼,3,3764,duàn liàn,to temper
-锻炼,3,3764,duàn liàn,to engage in physical exercise
-锻炼,3,3764,duàn liàn,to work out
-锻炼,3,3764,duàn liàn,(fig.) to develop one's skills
-锻炼,3,3764,duàn liàn,to train oneself
-裤子,3,3765,kù zi,"variant of 裤子, trousers"
-裤子,3,3765,kù zi,pants
-裤子,3,3765,kù zi,trousers
-裤子,3,3765,kù zi,pants
-夏,3,3828,Xià,the Xia or Hsia dynasty c. 2000 BC
-夏,3,3828,Xià,Xia of the Sixteen Kingdoms (407-432)
-夏,3,3828,Xià,surname Xia
+锻炼,3,3764,duàn liàn,to toughen; to temper; to work out; to develop one's skills
+裤子,3,3765,kù zi,pants; trousers
 夏,3,3828,xià,summer
 图书馆,3,3836,tú shū guǎn,library
-电梯,3,3894,diàn tī,elevator
-电梯,3,3894,diàn tī,escalator
-刮,3,3910,guā,to scrape
+电梯,3,3894,diàn tī,elevator; escalator
 刮,3,3910,guā,to blow
-刮,3,3910,guā,to shave
-刮,3,3910,guā,to plunder
-刮,3,3910,guā,to extort
-刮,3,3910,guā,to blow (of the wind)
-矮,3,3952,ǎi,low
-矮,3,3952,ǎi,short (in length)
-眼镜,3,3998,yǎn jìng,spectacles
-眼镜,3,3998,yǎn jìng,eyeglasses
-上网,3,4061,shàng wǎng,to go online
-上网,3,4061,shàng wǎng,to connect to the Internet
-上网,3,4061,shàng wǎng,(of a document etc) to be uploaded to the Internet
-上网,3,4061,shàng wǎng,"(tennis, volleyball etc) to move in close to the net"
-春,3,4065,Chūn,surname Chun
-春,3,4065,chūn,old variant of 春
-春,3,4065,chūn,spring (season)
-春,3,4065,chūn,gay
-春,3,4065,chūn,joyful
-春,3,4065,chūn,youthful
-春,3,4065,chūn,love
-春,3,4065,chūn,lust
-春,3,4065,chūn,life
+矮,3,3952,ǎi,short (in height); low (vertically)
+眼镜,3,3998,yǎn jìng,spectacles; eyeglasses
+上网,3,4061,shàng wǎng,to go online; to be online; to be uploaded to the Internet
+春,3,4065,chūn,spring (season); joyful; youthful
 面包,3,4138,miàn bāo,bread
-冰箱,3,4168,bīng xiāng,icebox
-冰箱,3,4168,bīng xiāng,freezer cabinet
-冰箱,3,4168,bīng xiāng,refrigerator
-阿姨,3,4355,ā yí,maternal aunt
-阿姨,3,4355,ā yí,step-mother
-阿姨,3,4355,ā yí,childcare worker
-阿姨,3,4355,ā yí,nursemaid
-阿姨,3,4355,ā yí,woman of similar age to one's parents (term of address used by child)
+冰箱,3,4168,bīng xiāng,freezer; refrigerator; icebox
+阿姨,3,4355,ā yí,moster; step-mother; woman of similar age to one's parents
 超市,3,4427,chāo shì,supermarket (abbr. for 超级市场)
-着急,3,4461,zháo jí,to worry; to feel anxious
-着急,3,4461,zháo jí,to feel a sense of urgency; to be in a hurry
-着急,3,4461,zháo jí,Taiwan pr. [zhāo jí]
-季节,3,4724,jì jié,time
-季节,3,4724,jì jié,season
-季节,3,4724,jì jié,period
-饱,3,4742,bǎo,to eat till full
-饱,3,4742,bǎo,satisfied
+着急,3,4461,zháo jí,to worry; to feel anxious; to feel urgency; to be in a hurry
+季节,3,4724,jì jié,time period; season
+饱,3,4742,bǎo,to eat till full; to be satisfied (with the amount eaten)
 空调,3,4763,kōng tiáo,air conditioning
-空调,3,4763,kōng tiáo,air conditioner (including units that have a heating mode)
 一共,3,4765,yī gòng,altogether
 月亮,3,4781,yuè liang,the moon
-北方,3,4879,běi fāng,north
-北方,3,4879,běi fāng,the northern part a country
-北方,3,4879,běi fāng,China north of the Yellow River
-爱好,3,4902,ài hào,to like; to be fond of; to take pleasure in; to be keen on
-爱好,3,4902,ài hào,interest; hobby
-衬衫,3,4988,chèn shān,shirt
-衬衫,3,4988,chèn shān,blouse
-冬,3,5272,Dōng,surname Dong
+北方,3,4879,běi fāng,north; the northern part a country; China north of the Yellow River
+爱好,3,4902,ài hào,hobby; interest; to take pleasure in; to be keen on
+衬衫,3,4988,chèn shān,shirt; blouse
 冬,3,5272,dōng,winter
-冬,3,5272,dōng,(onom.) beating a drum
-冬,3,5272,dōng,rat-a-tat
 裙子,3,5466,qún zi,skirt
 香蕉,3,5473,xiāng jiāo,banana
-秋,3,5603,Qiū,surname Qiu
-秋,3,5603,qiū,autumn
-秋,3,5603,qiū,fall
-秋,3,5603,qiū,harvest time
-秋,3,5603,qiū,old variant of 秋
-秋,3,5603,qiū,see 秋千
-发烧,3,5836,fā shāo,to have a high temperature (from illness)
+秋,3,5603,qiū,autumn; fall; harvest time
 发烧,3,5836,fā shāo,to have a fever
-伞,3,6101,sǎn,umbrella
-伞,3,6101,sǎn,parasol
-伞,3,6101,sǎn,damask silk
-伞,3,6101,sǎn,variant of 伞
-有名,3,6219,yǒu míng,famous
-有名,3,6219,yǒu míng,well-known
-打扫,3,6258,dǎ sǎo,to clean
-打扫,3,6258,dǎ sǎo,to sweep
+伞,3,6101,sǎn,umbrella; parasol
+有名,3,6219,yǒu míng,famous; well-known
+打扫,3,6258,dǎ sǎo,to clean; to sweep
 葡萄,3,6422,pú tao,grape
-复习,3,6867,fù xí,to review
-复习,3,6867,fù xí,revision
-复习,3,6867,fù xí,variant of 复习
+复习,3,6867,fù xí,to review; revision
 熊,3,,xióng,bear
 熊猫,3,7123,xióng māo,panda
 护照,3,7152,hù zhào,passport
 菜单,3,7509,cài dān,menu
-年级,3,7644,nián jí,grade
-年级,3,7644,nián jí,"year (in school, college etc)"
+年级,3,7644,nián jí,"grade; year (in school, college etc)"
 果汁,3,7765,guǒ zhī,fruit juice
 面条,3,8961,miàn tiáo,noodles
-盘子,3,9039,pán zi,tray
-盘子,3,9039,pán zi,plate
-盘子,3,9039,pán zi,dish
+盘子,3,9039,pán zi,plate; dish; tray
 铅笔,3,9108,qiān bǐ,(lead) pencil
 渴,3,9442,kě,thirsty
-洗手间,3,9674,xǐ shǒu jiān,toilet
-洗手间,3,9674,xǐ shǒu jiān,lavatory
-洗手间,3,9674,xǐ shǒu jiān,washroom
-词语,3,10379,cí yǔ,word (general term including monosyllables through to short phrases)
-词语,3,10379,cí yǔ,term (e.g. technical term)
-词语,3,10379,cí yǔ,expression
+洗手间,3,9674,xǐ shǒu jiān,toilet; lavatory; washroom
+词语,3,10379,cí yǔ,word; term; expression
 句子,3,10428,jù zi,sentence
+照相,3,,zhào xiàng,to take a picture
 照相机,3,10452,zhào xiàng jī,camera
 筷子,3,10486,kuài zi,chopsticks
-字典,3,13961,zì diǎn,"Chinese character dictionary (containing entries for single characters, contrasted with a 词典, which has entries for words of one or more characters)"
-字典,3,13961,zì diǎn,(coll.) dictionary
-普通话,3,14869,pǔ tōng huà,Mandarin (common language)
-普通话,3,14869,pǔ tōng huà,Putonghua (common speech of the Chinese language)
-普通话,3,14869,pǔ tōng huà,ordinary speech
-爬山,3,15470,pá shān,to climb a mountain
-爬山,3,15470,pá shān,to mountaineer
-爬山,3,15470,pá shān,hiking
-爬山,3,15470,pá shān,mountaineering
+字典,3,13961,zì diǎn,dictionary; character lookup dictionary
+普通话,3,14869,pǔ tōng huà,Mandarin (common language); ordinary speech
+爬山,3,15470,pá shān,to hike; to climb a mountain; hiking; mountaineering
 黑板,3,15524,hēi bǎn,blackboard
-行李箱,3,16680,xíng li xiāng,suitcase
-行李箱,3,16680,xíng li xiāng,baggage compartment
-行李箱,3,16680,xíng li xiāng,overhead bin
-行李箱,3,16680,xíng li xiāng,(car) trunk
-行李箱,3,16680,xíng li xiāng,boot
+行李箱,3,16680,xíng li xiāng,suitcase; (car) trunk; overhead bin
 油,3,,yóu,oil; fat; grease
 油条,3,,yóu tiáo,youtiao (Chinese churros)
 对,4,28,duì,towards; at; for
@@ -1001,7 +807,6 @@ A比BC,2,155,A bǐ B C,A is more C than B
 对,4,28,duì,to add; to pour in (a fluid)
 对,4,28,duì,to check; to compare
 对,4,28,duì,classifier: couple; pair
-过,4,60,Guō,surname Guo
 过,4,60,guo,(experienced action marker)
 过,4,60,guò,to cross
 过,4,60,guò,to go over
@@ -1222,7 +1027,6 @@ A比BC,2,155,A bǐ B C,A is more C than B
 计划,4,403,jì huà,to map out
 可是,4,404,kě shì,but; however
 可是,4,404,kě shì,(used for emphasis) indeed
-连,4,406,Lián,surname Lian
 连,4,406,lián,to link
 连,4,406,lián,to join
 连,4,406,lián,to connect
@@ -1240,8 +1044,6 @@ A比BC,2,155,A bǐ B C,A is more C than B
 消息,4,448,xiāo xi,information
 只要,4,452,zhǐ yào,if only
 只要,4,452,zhǐ yào,so long as
-干,4,463,Gān,surname Gan
-干,4,463,Gān,surname Gan
 干,4,463,gàn,tree trunk
 干,4,463,gàn,main part of sth
 干,4,463,gàn,to manage
@@ -1419,7 +1221,6 @@ A比BC,2,155,A bǐ B C,A is more C than B
 联系,4,667,lián xì,to touch
 因此,4,668,yīn cǐ,thus; consequently; as a result
 台,4,696,Tái,Taiwan (abbr.)
-台,4,696,Tái,surname Tai
 台,4,696,Tái,Taiwan (abbr.)
 台,4,696,tái,(classical) you (in letters)
 台,4,696,tái,variant of 台
@@ -1574,7 +1375,6 @@ A比BC,2,155,A bǐ B C,A is more C than B
 发展,4,859,fā zhǎn,to develop
 发展,4,859,fā zhǎn,to grow
 发展,4,859,fā zhǎn,to expand
-谈,4,862,Tán,surname Tan
 谈,4,862,tán,to speak
 谈,4,862,tán,to talk
 谈,4,862,tán,to converse
@@ -1796,7 +1596,6 @@ A比BC,2,155,A bǐ B C,A is more C than B
 够,4,1173,gòu,enough (too much)
 够,4,1173,gòu,(coll.) (before adj.) really
 够,4,1173,gòu,(coll.) to reach by stretching out
-火,4,1181,Huǒ,surname Huo
 火,4,1181,huǒ,fire
 火,4,1181,huǒ,urgent
 火,4,1181,huǒ,ammunition
@@ -1890,7 +1689,6 @@ A比BC,2,155,A bǐ B C,A is more C than B
 推,4,1277,tuī,to nominate
 推,4,1277,tuī,to elect
 推,4,1277,tuī,massage
-刀,4,1285,Dāo,surname Dao
 刀,4,1285,dāo,knife
 刀,4,1285,dāo,blade
 刀,4,1285,dāo,single-edged sword
@@ -1990,7 +1788,6 @@ A比BC,2,155,A bǐ B C,A is more C than B
 著名,4,1436,zhù míng,well-known
 著名,4,1436,zhù míng,celebrated
 拒绝,4,1443,jù jué,to refuse; to decline; to reject
-帅,4,1452,Shuài,surname Shuai
 帅,4,1452,shuài,(bound form) commander-in-chief
 帅,4,1452,shuài,(bound form) to lead; to command
 帅,4,1452,shuài,handsome; graceful; dashing; elegant
@@ -2141,7 +1938,6 @@ A比BC,2,155,A bǐ B C,A is more C than B
 怀疑,4,1763,huái yí,to have one's doubts
 怀疑,4,1763,huái yí,to harbor suspicions
 怀疑,4,1763,huái yí,to suspect that
-修,4,1778,Xiū,surname Xiu
 修,4,1778,xiū,to decorate
 修,4,1778,xiū,to embellish
 修,4,1778,xiū,to repair
@@ -2152,7 +1948,6 @@ A比BC,2,155,A bǐ B C,A is more C than B
 修,4,1778,xiū,to take (a class)
 修,4,1778,xiū,variant of 修
 价格,4,1783,jià gé,price
-戴,4,1802,Dài,surname Dai
 戴,4,1802,dài,"to put on or wear (glasses, hat, gloves etc)"
 戴,4,1802,dài,to respect
 戴,4,1802,dài,to bear
@@ -2351,7 +2146,6 @@ A比BC,2,155,A bǐ B C,A is more C than B
 高级,4,2221,gāo jí,high grade
 高级,4,2221,gāo jí,advanced
 高级,4,2221,gāo jí,high-ranking
-汤,4,2237,Tāng,surname Tang
 汤,4,2237,shāng,rushing current
 汤,4,2237,tāng,soup
 汤,4,2237,tāng,hot or boiling water
@@ -2602,7 +2396,6 @@ A比BC,2,155,A bǐ B C,A is more C than B
 数量,4,2916,shù liàng,quantitative
 勇敢,4,2934,yǒng gǎn,brave; courageous
 巧克力,4,3003,qiǎo kè lì,chocolate (loanword)
-富,4,3016,Fù,surname Fu
 富,4,3016,fù,rich
 富,4,3016,fù,abundant
 富,4,3016,fù,wealthy
@@ -2682,7 +2475,6 @@ A比BC,2,155,A bǐ B C,A is more C than B
 孤单,4,3459,gū dān,loneliness
 饮料,4,3463,yǐn liào,drink
 饮料,4,3463,yǐn liào,beverage
-宽,4,3471,Kuān,surname Kuan
 宽,4,3471,kuān,wide
 宽,4,3471,kuān,broad
 宽,4,3471,kuān,loose
@@ -2976,7 +2768,6 @@ A比BC,2,155,A bǐ B C,A is more C than B
 按时,4,7233,àn shí,before deadline
 按时,4,7233,àn shí,on schedule
 流泪,4,7253,liú lèi,to shed tears
-咸,4,7379,Xián,surname Xian
 咸,4,7379,xián,all
 咸,4,7379,xián,everyone
 咸,4,7379,xián,each
