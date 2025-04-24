@@ -10,9 +10,9 @@ wheels/
 .venv
 
 # Artifacts
-hsk.csv
-hsk2.csv
+data/hsk.csv
+data/hsk2.csv
+data/hsk-manual-repetitions.csv
 
 # Other
-
 字.png
