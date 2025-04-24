@@ -34,6 +34,10 @@ def main() -> None:
     cli.print(counts)
     counts.to_csv("data/hsk-manual-repetitions.csv")
 
+    # -------------------------------- #
+    cli.section("Repeated Entry Counts")
+    cli.print(counts.index.get_level_values("level").value_counts().sort_index())
+
 
 if __name__ == "__main__":
     main()
