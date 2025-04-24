@@ -62,5 +62,6 @@ def main() -> None:
     df.to_csv("data/hsk.csv", index=False)
     cli.print("Write OK")
 
+
 if __name__ == "__main__":
     main()
