@@ -64,7 +64,6 @@ class State:
     def set_current_level(self, level: int) -> None:
         assert 1 <= level <= 6, f"Expected 1 <= level <= 6; found {level=}"
         self.current_level = level
-        print(f"{self.current_level=}")
 
     def get_random_entry(self) -> Entry:
         top = self.level_tops[self.current_level-1]
@@ -74,7 +73,6 @@ class State:
 
     def randomize_entry(self) -> Entry:
         self.current_entry = self.get_random_entry()
-        print(f"{self.current_entry=}")
 
 
 class LevelSelector(QtWidgets.QWidget):
