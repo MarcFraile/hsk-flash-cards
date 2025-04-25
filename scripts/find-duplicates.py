@@ -22,6 +22,19 @@ def main() -> None:
     cli.print(data.groupby("level")["hanzi"].count())
 
     # -------------------------------- #
+    cli.section("Entries with Hanzi and Pinyin Length Mismatch")
+
+    hanzi_count = data["hanzi"].str.len()
+    pinyin_count = data["pinyin"].str.split().apply(len)
+
+    hanzi_mismatch = data[hanzi_count != pinyin_count]
+    hanzi_mismatch.index.name = "row"
+    hanzi_mismatch.index += 2
+
+    cli.print(hanzi_mismatch)
+    hanzi_mismatch.to_csv("data/hsk-manual-hanzi-pinyin-mismatch.csv")
+
+    # -------------------------------- #
     cli.section("Unique Entries per Level")
     cli.print(data.groupby("level")["hanzi"].nunique())
 

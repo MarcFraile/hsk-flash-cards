@@ -13,6 +13,7 @@ wheels/
 data/hsk.csv
 data/hsk2.csv
 data/hsk-manual-repetitions.csv
+data/hsk-manual-hanzi-pinyin-mismatch.csv
 
 # Other
 字.png
