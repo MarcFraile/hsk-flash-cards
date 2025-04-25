@@ -436,6 +436,7 @@ A比BC,2,155,A bǐ B C,A is more C than B
 更,3,127,gēng,to change or replace; to experience
 需要,3,131,xū yào,to need; to want; to demand; to require
 地,3,132,dì,earth; ground; place; land
+地,3,132,de,"-ly; structural particle: used before a verb or adjective, linking it to preceding modifying adverbial adjunct"
 才,3,133,cái,ability; talent
 才,3,133,cái,sb of a certain type
 才,3,133,cái,a capable individual
@@ -453,7 +454,7 @@ A比BC,2,155,A bǐ B C,A is more C than B
 发现,3,189,fā xiàn,to discover; to notice; to become aware of; a discovery
 一定,3,198,yī dìng,surely; certainly;must
 一直,3,203,yī zhí,straight (in a straight line); continuously; always; all the way through
-为了,3,229,wèi le,for; for the purpose of; in order to
+为了,3,229,wèi le,for the purpose of; in order to; so as to
 一样,3,235,yī yàng,the same as; like; equal to
 世界,3,238,shì jiè,world
 世界杯,3,238,shì jiè bēi,World Cup
@@ -551,7 +552,7 @@ A比BC,2,155,A bǐ B C,A is more C than B
 检查,3,659,jiǎn chá,to inspect; to examine; inspection
 米,3,663,mǐ,meter (classifier)
 容易,3,664,róng yì,easy; straightforward
-明白,3,676,míng bai,clear; obvious; to understand to realize
+明白,3,676,míng bai,to understand; to realize; clear; obvious
 根据,3,694,gēn jù,according to; based on; basis; foundation
 记得,3,699,jì de,to remember
 辆,3,699,liàng,classifier for vehicles
@@ -601,8 +602,7 @@ A比BC,2,155,A bǐ B C,A is more C than B
 健康,3,952,jiàn kāng,health; healthy
 作用,3,955,zuò yòng,to act on; to affect; action; effect
 西,3,958,xī,west; the West
-差,3,968,chà,different; wrong; mistaken; to lack; inferior; difference; discrepancy
-差,3,968,chāi,to send (on an errand); job; official post
+差,3,968,chà,to lack; to fall short
 结婚,3,982,jié hūn,to marry; to get married
 短,3,983,duǎn,short (in length); brief
 同意,3,985,tóng yì,to agree; to consent; to approve
@@ -628,7 +628,7 @@ A比BC,2,155,A bǐ B C,A is more C than B
 祝,3,1197,zhù,"to wish (sb bon voyage, happy birthday etc); to pray for"
 层,3,1202,céng,to pile on top of one another; layer; stratum; (classifier for layers)
 腿,3,1216,tuǐ,leg
-班,3,1238,bān,team; class; grade; work shift
+班,3,1238,bān,class; team; squad; work shift
 坏,3,1239,huài,bad; spoiled; broken; to break down
 一边,3,1241,yī biān,one side; either side
 一边A一边B,3,1241,yī biān A yī biān B,"on one hand A, on the other hand B"
@@ -777,7 +777,7 @@ A比BC,2,155,A bǐ B C,A is more C than B
 熊猫,3,7123,xióng māo,panda
 护照,3,7152,hù zhào,passport
 菜单,3,7509,cài dān,menu
-年级,3,7644,nián jí,"grade; year (in school, college etc)"
+年级,3,7644,nián jí,school year; school grade; curs
 果汁,3,7765,guǒ zhī,fruit juice
 面条,3,8961,miàn tiáo,noodles
 盘子,3,9039,pán zi,plate; dish; tray
