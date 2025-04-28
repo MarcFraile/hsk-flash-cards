@@ -437,12 +437,8 @@ A比BC,2,155,A bǐ B C,A is more C than B
 需要,3,131,xū yào,to need; to want; to demand; to require
 地,3,132,dì,earth; ground; place; land
 A地V,3,132,A de V,A-ly V; (indicates A is an adverb affecting the verb V)
-才,3,133,cái,ability; talent
-才,3,133,cái,sb of a certain type
-才,3,133,cái,a capable individual
-才,3,133,cái,then and only then
-才,3,133,cái,just now
-才,3,133,cái,(before an expression of quantity) only
+才,3,133,cái,(before a quantity) only
+只有A才B,3,,zhǐ yǒu A cái B,only if A then B
 跟,3,135,gēn,to; towards; with
 像,3,151,xiàng,to resemble; to be like; appearance; image
 还是,3,160,hái shi,still (as before); or
@@ -469,7 +465,8 @@ A地V,3,132,A de V,A-ly V; (indicates A is an adverb affecting the verb V)
 担心,3,277,dān xīn,to worry; to be anxious; anxious; worried
 条,3,277,tiáo,"(classifier for long thin things: ribbon, river, road, trousers, etc.); strip"
 放,3,280,fàng,to put; to place
-拿,3,287,ná,to hold; to seize; to catch
+拿,3,287,ná,to take; to hold; to catch
+拿A来说,3,,ná A lái shuō,take A as an example
 为什么,3,299,wèi shén me,why?; for what reason?
 先,3,306,xiān,first; prior; former
 关系,3,318,guān xi,relationship; relation
@@ -546,7 +543,7 @@ A地V,3,132,A de V,A-ly V; (indicates A is an adverb affecting the verb V)
 除了,3,638,chú le,besides; in addition to; except (for)
 除了A还B,3,638,chú le A hái B,"apart from A, also B"
 总是,3,638,zǒng shì,always
-双,3,642,shuāng,pair; (measure word for pairs: 筷子).
+双,3,642,shuāng,pair; (measure word for pairs)
 突然,3,644,tū rán,sudden; abrupt; unexpected
 段,3,647,duàn,"(classifier for stories, periods of time, lengths of thread etc)"
 检查,3,659,jiǎn chá,to inspect; to examine; inspection
@@ -570,13 +567,7 @@ A地V,3,132,A de V,A-ly V; (indicates A is an adverb affecting the verb V)
 照片,3,766,zhào piàn,photograph; picture
 银行,3,769,yín háng,bank
 故事,3,772,gù shi,narrative; story; tale
-一般,3,798,yī bān,same
-一般,3,798,yī bān,ordinary
-一般,3,798,yī bān,so-so
-一般,3,798,yī bān,common
-一般,3,798,yī bān,general
-一般,3,798,yī bān,generally
-一般,3,798,yī bān,in general
+一般,3,798,yī bān,usually; generally; ordinary; common; so-so
 可爱,3,799,kě ài,adorable; cute; lovely
 新闻,3,805,xīn wén,news
 声音,3,841,shēng yīn,voice; sound
@@ -611,9 +602,6 @@ A地V,3,132,A de V,A-ly V; (indicates A is an adverb affecting the verb V)
 附近,3,1020,fù jìn,nearby; neighboring; neighborhood
 认真,3,1020,rèn zhēn,conscientious; earnest; serious
 脚,3,1024,jiǎo,foot
-脚,3,1024,jiǎo,leg (of an animal or an object)
-脚,3,1024,jiǎo,base (of an object)
-脚,3,1024,jiǎo,classifier for kicks
 主要,3,1031,zhǔ yào,main; primary; principal
 遇到,3,1063,yù dào,to meet; to run into; to come across
 年轻,3,1100,nián qīng,young
@@ -633,6 +621,7 @@ A地V,3,132,A de V,A-ly V; (indicates A is an adverb affecting the verb V)
 一边,3,1241,yī biān,one side; either side
 一边A一边B,3,1241,yī biān A yī biān B,"on one hand A, on the other hand B"
 鞋,3,1249,xié,shoe
+鞋子,3,,xié zi,shoe
 习惯,3,1251,xí guàn,habit; custom; to be used to
 变化,3,1262,biàn huà,change; variation; to change; to vary
 周末,3,1269,zhōu mò,weekend
@@ -796,6 +785,8 @@ A地V,3,132,A de V,A-ly V; (indicates A is an adverb affecting the verb V)
 行李箱,3,16680,xíng li xiāng,suitcase; (car) trunk; overhead bin
 油,3,,yóu,oil; fat; grease
 油条,3,,yóu tiáo,youtiao (Chinese churros)
+一点儿都不A,3,,yì diǎr - dōu bù A, not A at all
+一点儿也不A,3,,yì diǎr - yě bù A, not A at all
 对,4,28,duì,towards; at; for
 对,4,28,duì,concerning; regarding
 对,4,28,duì,to treat (sb a certain way)
