@@ -11,6 +11,7 @@ from PySide6.QtCore import Qt
 
 
 def clear_layout(layout: QtWidgets.QLayout) -> None:
+    """Remove all children from `layout`."""
     while layout.count():
         item = layout.takeAt(0)
         widget = item.widget()
@@ -20,10 +21,15 @@ def clear_layout(layout: QtWidgets.QLayout) -> None:
 
 @dataclass
 class Entry:
-    level      : int
+    """Single entry in the word database."""
+    level : int
+    """Which HSK2.0 level does this word or expression belong to?"""
     characters : list[str]
-    pinyin     : list[str]
-    meanings   : list[str]
+    """The simplified Chinese characters in this word or expression, as a list of individual characters."""
+    pinyin : list[str]
+    """The pinyin spellings of each character in this word or expression."""
+    meanings : list[str]
+    """Different ways to translate this word or expression into English."""
 
 
 class State:
