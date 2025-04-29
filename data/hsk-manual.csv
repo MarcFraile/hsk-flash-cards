@@ -340,7 +340,6 @@ A比BC,2,155,A bǐ B C,A is more C than B
 票,2,956,piào,ticket; ballot; banknote
 意思,2,988,yì si,meaning; idea
 早上,2,1092,zǎo shang,early morning
-回答,2,1100,huí dá,to reply; to answer; reply; answer
 运动,2,1138,yùn dòng,sports; exercise; to exercise
 妻子,2,1187,qī zi,wife
 鱼,2,1189,yú,fish
@@ -449,7 +448,7 @@ A地V,3,132,A de V,A-ly V; (indicates A is an adverb affecting the verb V)
 种,3,179,zhǒng,"kind; type; (classifier for types, kinds, sorts)"
 发现,3,189,fā xiàn,to discover; to notice; to become aware of; a discovery
 一定,3,198,yī dìng,surely; certainly;must
-一直,3,203,yī zhí,straight (in a straight line); continuously; always; all the way through
+一直,3,203,yī zhí,straight (direction); continuously; always; all the way through
 为了,3,229,wèi le,for the purpose of; in order to; so as to
 一样,3,235,yī yàng,the same as; like; equal to
 世界,3,238,shì jiè,world
@@ -566,7 +565,7 @@ A地V,3,132,A de V,A-ly V; (indicates A is an adverb affecting the verb V)
 清楚,3,766,qīng chu,to be clear about
 照片,3,766,zhào piàn,photograph; picture
 银行,3,769,yín háng,bank
-故事,3,772,gù shi,narrative; story; tale
+故事,3,772,gù shi,story; tale
 一般,3,798,yī bān,usually; generally; ordinary; common; so-so
 可爱,3,799,kě ài,adorable; cute; lovely
 新闻,3,805,xīn wén,news
@@ -787,7 +786,9 @@ A地V,3,132,A de V,A-ly V; (indicates A is an adverb affecting the verb V)
 油条,3,,yóu tiáo,youtiao (Chinese churros)
 一点儿都不A,3,,yì diǎr - dōu bù A, not A at all
 一点儿也不A,3,,yì diǎr - yě bù A, not A at all
-对,4,28,duì,towards; at; for
+这么,3,,zhè me,such; so
+回答,3,1100,huí dá,to reply; to answer; reply; answer
+黄河,3,,huáng hé,the Yellow River
 对,4,28,duì,concerning; regarding
 对,4,28,duì,to treat (sb a certain way)
 对,4,28,duì,to face
