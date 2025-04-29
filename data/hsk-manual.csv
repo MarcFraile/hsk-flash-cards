@@ -276,6 +276,8 @@ A比BC,2,155,A bǐ B C,A is more C than B
 大家,2,189,dà jiā,everyone
 非常,2,194,fēi cháng,very; really
 孩子,2,207,hái zi,child
+男孩,2,,nán hái,boy
+女孩,2,,nǚ hái,girl
 别,2,214,bié,don't...
 公司,2,220,gōng sī,company; firm; corporation
 第一,2,223,dì yī,first; number one
@@ -432,7 +434,6 @@ A比BC,2,155,A bǐ B C,A is more C than B
 又A又B,3,91,yòu A yòu B,both A and B
 只,3,98,zhǐ,only; merely; just
 更,3,127,gèng,more; even more
-更,3,127,gēng,to change or replace; to experience
 需要,3,131,xū yào,to need; to want; to demand; to require
 地,3,132,dì,earth; ground; place; land
 A地V,3,132,A de V,A-ly V; (indicates A is an adverb affecting the verb V)
@@ -444,13 +445,14 @@ A地V,3,132,A de V,A-ly V; (indicates A is an adverb affecting the verb V)
 认为,3,168,rèn wéi,to believe; to think; to consider; to feel
 应该,3,174,yīng gāi,ought to; should; must
 带,3,177,dài,to bring; to carry
-位,3,177,wèi,position; location; place; seat
+位,3,177,wèi,"(honorific measure word for people, used to show respect)"
 种,3,179,zhǒng,"kind; type; (classifier for types, kinds, sorts)"
 发现,3,189,fā xiàn,to discover; to notice; to become aware of; a discovery
 一定,3,198,yī dìng,surely; certainly;must
 一直,3,203,yī zhí,straight (direction); continuously; always; all the way through
 为了,3,229,wèi le,for the purpose of; in order to; so as to
 一样,3,235,yī yàng,the same as; like; equal to
+A像B一样,3,,A xiàng B yī yàng,A is like B
 世界,3,238,shì jiè,world
 世界杯,3,238,shì jiè bēi,World Cup
 而且,3,239,ér qiě,(not only ...) but also; moreover; in addition; furthermore
@@ -471,12 +473,8 @@ A地V,3,132,A de V,A-ly V; (indicates A is an adverb affecting the verb V)
 关系,3,318,guān xi,relationship; relation
 出现,3,323,chū xiàn,to appear; to arise; to show up; to emerge
 了解,3,336,liǎo jiě,to understand; to realize; to find out
-过去,3,353,guò qu,(verb suffix)
-过去,3,353,guò qù,(in the) past
-过去,3,353,guò qù,former
-过去,3,353,guò qù,previous
-过去,3,353,guò qù,to go over
-过去,3,353,guò qù,to pass by
+过去,3,353,guò qu,(in the) past; former; previous
+过去,3,353,guò qù,to go over; to pass by
 参加,3,355,cān jiā,to participate; to take part; to join
 国家,3,356,guó jiā,country; nation; state
 国外,3,,guó wài,abroad
@@ -487,15 +485,9 @@ A地V,3,132,A de V,A-ly V; (indicates A is an adverb affecting the verb V)
 机会,3,393,jī huì,opportunity; chance; occasion
 别人,3,397,bié ren,other people; others; other person
 站,3,399,zhàn,to stand; to halt; to stop
-使,3,400,shǐ,to make
-使,3,400,shǐ,to cause
-使,3,400,shǐ,to enable
-使,3,400,shǐ,to use
-使,3,400,shǐ,to employ
-使,3,400,shǐ,to send
+使,3,400,shǐ,to cause; to enable; to use; to employ
 使,3,400,shǐ,to instruct sb to do sth
-使,3,400,shǐ,envoy
-使,3,400,shǐ,messenger
+使,3,400,shǐ,envoy; messenger
 其实,3,405,qí shí,actually; in fact; really
 以后,3,407,yǐ hòu,after; later; afterwards
 要求,3,409,yāo qiú,to request; to require; requirement
@@ -511,7 +503,7 @@ A地V,3,132,A de V,A-ly V; (indicates A is an adverb affecting the verb V)
 接,3,425,jiē,to take one's turn on duty
 接,3,425,jiē,to take over for sb
 相信,3,431,xiāng xìn,to be convinced (that sth is true); to believe; to accept sth as true
-花,3,435,huā,"flower; blossom; to spend (money, time)"
+花,3,435,huā,flower; blossom
 虽然,3,440,suī rán,although; even though
 解决,3,458,jiě jué,to solve; to resolve; to settle (a problem)
 关于,3,478,guān yú,pertaining to; concerning; with regard to
@@ -530,7 +522,7 @@ A地V,3,132,A de V,A-ly V; (indicates A is an adverb affecting the verb V)
 越,3,574,yuè,to exceed; to surpass
 越A越B,3,574,yuè A yuè B,"the more A, the more B"
 城市,3,593,chéng shì,city; town
-影响,3,598,yǐng xiǎng,influence; effect; to influence; to affect (usually adversely)
+影响,3,598,yǐng xiǎng,influence; impact; to influence; to affect
 游戏,3,603,yóu xì,game; to play
 马,3,605,mǎ,horse
 比较,3,607,bǐ jiào,to compare; to contrast; comparatively; relatively
@@ -559,10 +551,7 @@ A地V,3,132,A de V,A-ly V; (indicates A is an adverb affecting the verb V)
 包,3,755,bāo,bag; wrapper; to cover; to wrap
 书包,3,,shū bāo,backpack
 楼,3,765,lóu,floor; storied building
-清楚,3,766,qīng chu,clear
-清楚,3,766,qīng chu,distinct
-清楚,3,766,qīng chu,to understand thoroughly
-清楚,3,766,qīng chu,to be clear about
+清楚,3,766,qīng chu,clear; distinct; to understand thoroughly; to be clear about
 照片,3,766,zhào piàn,photograph; picture
 银行,3,769,yín háng,bank
 故事,3,772,gù shi,story; tale
@@ -571,16 +560,8 @@ A地V,3,132,A de V,A-ly V; (indicates A is an adverb affecting the verb V)
 新闻,3,805,xīn wén,news
 声音,3,841,shēng yīn,voice; sound
 马上,3,847,mǎ shàng,right away; immediately; on horseback (i.e. by military force)
-表示,3,854,biǎo shì,to express
-表示,3,854,biǎo shì,to show
-表示,3,854,biǎo shì,to say
-表示,3,854,biǎo shì,to state
-表示,3,854,biǎo shì,to indicate
-表示,3,854,biǎo shì,to mean
-经过,3,867,jīng guò,to pass
-经过,3,867,jīng guò,to go through
-经过,3,867,jīng guò,process
-经过,3,867,jīng guò,course
+表示,3,854,biǎo shì,to express; to show; to state; to mean
+经过,3,867,jīng guò,to pass; to go through; process; course
 历史,3,882,lì shǐ,history
 哭,3,898,kū,to cry; to weep
 敢,3,902,gǎn,to dare; daring
@@ -634,8 +615,6 @@ A地V,3,132,A de V,A-ly V; (indicates A is an adverb affecting the verb V)
 树,3,1481,shù,tree; to cultivate; to set up
 水平,3,1490,shuǐ píng,standard; level (of achievement)
 借,3,1495,jiè,to lend; to borrow
-借,3,1495,jiè,by means of
-借,3,1495,jiè,to take (an opportunity)
 东,3,1509,dōng,east
 头,3,,tóu,head
 头发,3,1533,tóu fa,hair (on the head)
@@ -677,8 +656,7 @@ A地V,3,132,A de V,A-ly V; (indicates A is an adverb affecting the verb V)
 同事,3,2337,tóng shì,colleague; co-worker
 舒服,3,2343,shū fu,comfortable; feeling well
 体育,3,2354,tǐ yù,sports; physical education
-角,3,2370,jiǎo,"unit of money equal to 10 cents of a yuan"
-角,3,2370,jué,to compete
+角,3,2370,jiǎo,10 cents of a yuan
 胖,3,2396,pàng,fat; plump
 干净,3,2430,gān jìng,clean; neat
 放心,3,2458,fàng xīn,to feel relieved; to feel reassured; to be at ease
@@ -688,7 +666,10 @@ A地V,3,132,A de V,A-ly V; (indicates A is an adverb affecting the verb V)
 作业,3,2574,zuò yè,school assignment; homework; task
 瘦,3,2595,shòu,thin; to lose weight
 绿,3,2608,lu:4,green
+酒,3,,jiǔ,alcoholic beverage
 啤酒,3,2622,pí jiǔ,beer
+酒店,3,,jiǔ diàn,hotel; restaurant; pub; wine shop
+酒馆,3,,jiǔ guǎn,tavern; pub; wine shop
 蛋糕,3,2650,dàn gāo,cake
 新鲜,3,2651,xīn xiān,"fresh (experience, food, etc.); novel; uncommon"
 难过,3,2714,nán guò,to feel sad; to feel unwell; (of life) to be difficult
