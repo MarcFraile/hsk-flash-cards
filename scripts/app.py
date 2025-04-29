@@ -234,6 +234,8 @@ class MeaningDisplay(QtWidgets.QWidget):
 class ControlButtons(QtWidgets.QWidget):
     state : State
 
+    prev_button : QtWidgets.QPushButton
+    show_button : QtWidgets.QPushButton
     next_button : QtWidgets.QPushButton
 
     on_prev              : Callable[[], None]
@@ -264,18 +266,21 @@ class ControlButtons(QtWidgets.QWidget):
         self.icon_next = QtGui.QIcon("data/square-caret-right.png")
         self.icon_prev = QtGui.QIcon("data/square-caret-left.png")
 
-        self.next_button = QtWidgets.QPushButton(text="Prev")
-        self.next_button.setIcon(self.icon_prev)
-        self.next_button.clicked.connect(self.on_prev)
-        layout.addWidget(self.next_button)
+        self.prev_button = QtWidgets.QPushButton(text="Prev")
+        self.prev_button.setIcon(self.icon_prev)
+        self.prev_button.setToolTip("Backspace")
+        self.prev_button.clicked.connect(self.on_prev)
+        layout.addWidget(self.prev_button)
 
         self.show_button = QtWidgets.QPushButton(text="Show")
         self.show_button.setIcon(self.icon_show)
+        self.show_button.setToolTip("Space")
         self.show_button.clicked.connect(self.on_toggle_visibility)
         layout.addWidget(self.show_button)
 
         self.next_button = QtWidgets.QPushButton(text="Next")
         self.next_button.setIcon(self.icon_next)
+        self.next_button.setToolTip("Enter")
         self.next_button.clicked.connect(self.on_next)
         layout.addWidget(self.next_button)
 
