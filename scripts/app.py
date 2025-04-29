@@ -37,10 +37,14 @@ class State:
     rng        : random.Random
     level_tops : list[int]
 
-    current_level : int
-    current_entry : Entry
+    current_level : int # TODO: Consider doing min-max range.
+
+    entry_history : list[Entry]
+    current_entry : int
 
     show_pinyin : bool
+
+    MAX_HISTORY : int = 128
 
     def __init__(self):
         self.data = pd.read_csv("data/hsk-manual.csv")
@@ -48,7 +52,8 @@ class State:
         self.level_tops = [ int(self.data.index[self.data["level"] <= i+1].max()) for i in range(6) ]
 
         self.current_level = 1
-        self.current_entry = self.get_random_entry()
+        self.entry_history = [ self.get_random_entry() ]
+        self.current_entry = 0
         self.show_pinyin = False
 
     def get_entry(self, idx: int) -> Entry:
@@ -77,8 +82,24 @@ class State:
         entry = self.get_entry(idx)
         return entry
 
-    def randomize_entry(self) -> Entry:
-        self.current_entry = self.get_random_entry()
+    def get_current_entry(self) -> Entry:
+        assert 0 <= self.current_entry < len(self.entry_history)
+        return self.entry_history[self.current_entry]
+
+    def move_to_previous_entry(self) -> Entry:
+        if self.current_entry > 0:
+            self.current_entry -= 1
+        return self.get_current_entry()
+
+    def move_to_next_entry(self) -> Entry:
+        if self.current_entry < len(self.entry_history) - 1:
+            self.current_entry += 1
+        else:
+            self.entry_history.append(self.get_random_entry())
+            if len(self.entry_history) > self.MAX_HISTORY:
+                self.entry_history.pop(0)
+            self.current_entry = len(self.entry_history) - 1
+        return self.get_current_entry()
 
 
 class LevelSelector(QtWidgets.QWidget):
@@ -128,7 +149,7 @@ class TextDisplayInner(QtWidgets.QWidget):
     def populate(self) -> None:
         clear_layout(self.layout)
 
-        entry = self.state.current_entry
+        entry = self.state.get_current_entry()
 
         for i, (character, pinyin) in enumerate(zip(entry.characters, entry.pinyin)):
             if self.state.show_pinyin:
@@ -172,7 +193,8 @@ class TextDisplay(QtWidgets.QWidget):
 
     def populate(self) -> None:
         self.inner_display.populate()
-        self.hsk_display.setText(f"HSK{self.state.current_entry.level}")
+        entry = self.state.get_current_entry()
+        self.hsk_display.setText(f"HSK{entry.level}")
 
 
 class MeaningDisplay(QtWidgets.QWidget):
@@ -200,7 +222,7 @@ class MeaningDisplay(QtWidgets.QWidget):
         if not self.state.show_pinyin:
             return
 
-        entry = self.state.current_entry
+        entry = self.state.get_current_entry()
 
         for meaning in entry.meanings:
             meaning_label = QtWidgets.QLabel(text=meaning)
@@ -214,17 +236,20 @@ class ControlButtons(QtWidgets.QWidget):
 
     next_button : QtWidgets.QPushButton
 
+    on_prev              : Callable[[], None]
     on_next              : Callable[[], None]
     on_toggle_visibility : Callable[[], None]
 
     icon_show : QtGui.QIcon
     icon_hide : QtGui.QIcon
-    icon_play : QtGui.QIcon
+    icon_next : QtGui.QIcon
+    icon_prev : QtGui.QIcon
 
-    def __init__(self, state: State, on_next: Callable[[], None], on_toggle_visibility: Callable[[], None]):
+    def __init__(self, state: State, on_prev: Callable[[], None], on_next: Callable[[], None], on_toggle_visibility: Callable[[], None]):
         super().__init__()
 
         self.state = state
+        self.on_prev = on_prev
         self.on_next = on_next
         self.on_toggle_visibility = on_toggle_visibility
 
@@ -236,7 +261,13 @@ class ControlButtons(QtWidgets.QWidget):
 
         self.icon_show = QtGui.QIcon("data/eye.png")
         self.icon_hide = QtGui.QIcon("data/eye-slash.png")
-        self.icon_play = QtGui.QIcon("data/square-caret-right.png")
+        self.icon_next = QtGui.QIcon("data/square-caret-right.png")
+        self.icon_prev = QtGui.QIcon("data/square-caret-left.png")
+
+        self.next_button = QtWidgets.QPushButton(text="Prev")
+        self.next_button.setIcon(self.icon_prev)
+        self.next_button.clicked.connect(self.on_prev)
+        layout.addWidget(self.next_button)
 
         self.show_button = QtWidgets.QPushButton(text="Show")
         self.show_button.setIcon(self.icon_show)
@@ -244,7 +275,7 @@ class ControlButtons(QtWidgets.QWidget):
         layout.addWidget(self.show_button)
 
         self.next_button = QtWidgets.QPushButton(text="Next")
-        self.next_button.setIcon(self.icon_play)
+        self.next_button.setIcon(self.icon_next)
         self.next_button.clicked.connect(self.on_next)
         layout.addWidget(self.next_button)
 
@@ -278,7 +309,6 @@ class MainWindow(QtWidgets.QWidget):
         self.character_font = QtGui.QFont("KaiTi", pointSize=80)
 
         self.init_ui()
-        self.randomize()
 
     def init_ui(self) -> None:
         main_layout = QtWidgets.QVBoxLayout()
@@ -292,14 +322,19 @@ class MainWindow(QtWidgets.QWidget):
         self.meaning_display = MeaningDisplay(self.state, self.latin_font)
         main_layout.addWidget(self.meaning_display)
 
-        self.control_buttons = ControlButtons(state=self.state, on_next=self.randomize, on_toggle_visibility=self.toggle_pinyin)
+        self.control_buttons = ControlButtons(state=self.state, on_prev=self.step_back, on_next=self.step_forward, on_toggle_visibility=self.toggle_pinyin)
         main_layout.addWidget(self.control_buttons)
 
         self.setLayout(main_layout)
 
-    def randomize(self) -> None:
+    def step_back(self) -> None:
         self.state.show_pinyin = False
-        self.state.randomize_entry()
+        self.state.move_to_previous_entry()
+        self.refresh()
+
+    def step_forward(self) -> None:
+        self.state.show_pinyin = False
+        self.state.move_to_next_entry()
         self.refresh()
 
     def refresh(self) -> None:
@@ -312,8 +347,12 @@ class MainWindow(QtWidgets.QWidget):
         self.refresh()
 
     def eventFilter(self, obj: QtCore.QObject, event: QtCore.QEvent) -> bool:
+        if event.type() == QtCore.QEvent.KeyPress and event.key() == Qt.Key_Backspace:
+            self.step_back()
+            return True
+
         if event.type() == QtCore.QEvent.KeyPress and event.key() == Qt.Key_Return:
-            self.randomize()
+            self.step_forward()
             return True
 
         if event.type() == QtCore.QEvent.KeyPress and event.key() == Qt.Key_Space:
