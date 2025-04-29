@@ -113,6 +113,10 @@ class LevelSelector(QtWidgets.QWidget):
 
     def init_ui(self) -> None:
         level_layout = QtWidgets.QHBoxLayout()
+
+        level_label = QtWidgets.QLabel("Max level:")
+        level_layout.addWidget(level_label)
+
         self.level_group = QtWidgets.QButtonGroup(exclusive=True)
 
         for i in range(1, 7):
@@ -297,6 +301,8 @@ class ControlButtons(QtWidgets.QWidget):
 
 
 class MainWindow(QtWidgets.QWidget):
+    app            : QtWidgets.QApplication
+
     state          : State
     latin_font     : QtGui.QFont
     character_font : QtGui.QFont
@@ -306,8 +312,10 @@ class MainWindow(QtWidgets.QWidget):
     meaning_display : MeaningDisplay
     control_buttons : ControlButtons
 
-    def __init__(self):
+    def __init__(self, app: QtWidgets.QApplication):
         super().__init__(windowTitle="HSK Flashcards", windowIcon=QtGui.QIcon("data/字.png"))
+
+        self.app = app
 
         self.state = State()
         self.latin_font = QtGui.QFont("Arial", pointSize=16)
@@ -364,12 +372,16 @@ class MainWindow(QtWidgets.QWidget):
             self.toggle_pinyin()
             return True
 
+        if event.type() == QtCore.QEvent.KeyPress and event.key() == Qt.Key_Escape:
+            self.app.quit()
+            return True
+
         return super().eventFilter(obj, event)
 
 
 def main() -> None:
     app = QtWidgets.QApplication(sys.argv)
-    window = MainWindow()
+    window = MainWindow(app)
     app.installEventFilter(window)
     window.show()
 
