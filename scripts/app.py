@@ -37,7 +37,8 @@ class State:
     rng        : random.Random
     level_tops : list[int]
 
-    current_level : int # TODO: Consider doing min-max range.
+    min_level : int
+    max_level : int
 
     entry_history : list[Entry]
     current_entry : int
@@ -48,12 +49,15 @@ class State:
 
     def __init__(self):
         self.data = pd.read_csv("data/hsk-manual.csv")
-        self.rng = random.Random()
         self.level_tops = [ int(self.data.index[self.data["level"] <= i+1].max()) for i in range(6) ]
+        self.rng = random.Random()
 
-        self.current_level = 1
+        self.min_level = 1
+        self.max_level = 3
+
         self.entry_history = [ self.get_random_entry() ]
         self.current_entry = 0
+
         self.show_pinyin = False
 
     def get_entry(self, idx: int) -> Entry:
@@ -72,14 +76,25 @@ class State:
 
         return Entry(level, characters, pinyin, meanings)
 
-    def set_current_level(self, level: int) -> None:
+    def set_min_level(self, level: int) -> None:
         assert 1 <= level <= 6, f"Expected 1 <= level <= 6; found {level=}"
-        self.current_level = level
+        assert level <= self.max_level, f"Expected level <= self.max_level. Found {level=}; {self.max_level=}"
+        self.min_level = level
+
+    def set_max_level(self, level: int) -> None:
+        assert 1 <= level <= 6, f"Expected 1 <= level <= 6; found {level=}"
+        assert self.min_level <= level, f"Expected self.min_level <= level. Found {level=}; {self.min_level=}"
+        self.max_level = level
 
     def get_random_entry(self) -> Entry:
-        top = self.level_tops[self.current_level-1]
-        idx = self.rng.randint(0, top)
+        # We have to shift the levels from 1-indexed to 0-indexed when looking up values in level_tops.
+        # Since we store the top inclusive, the bottom is the previous top + 1.
+        bottom = 0 if self.min_level < 2 else self.level_tops[self.min_level - 2] + 1
+        top = self.level_tops[self.max_level-1]
+
+        idx = self.rng.randint(bottom, top)
         entry = self.get_entry(idx)
+
         return entry
 
     def get_current_entry(self) -> Entry:
@@ -103,8 +118,11 @@ class State:
 
 
 class LevelSelector(QtWidgets.QWidget):
-    state: State
-    level_group: QtWidgets.QButtonGroup
+    state     : State
+
+    min_group : QtWidgets.QButtonGroup
+    max_group : QtWidgets.QButtonGroup
+    layout    : QtWidgets.QLayout
 
     def __init__(self, state: State):
         super().__init__()
@@ -112,20 +130,55 @@ class LevelSelector(QtWidgets.QWidget):
         self.init_ui()
 
     def init_ui(self) -> None:
-        level_layout = QtWidgets.QHBoxLayout()
+        self.layout = QtWidgets.QVBoxLayout()
 
-        level_label = QtWidgets.QLabel("Max level:")
-        level_layout.addWidget(level_label)
+        self.min_group = self._make_button_row(
+            label="Min level:",
+            initial_value=self.state.min_level,
+            on_click=self._set_min_level,
+        )
 
-        self.level_group = QtWidgets.QButtonGroup(exclusive=True)
+        self.max_group = self._make_button_row(
+            label="Max level:",
+            initial_value=self.state.max_level,
+            on_click=self._set_max_level,
+        )
+
+        self.setLayout(self.layout)
+        self.update_ui()
+
+    def _make_button_row(self, label: str, initial_value: int, on_click: Callable[[int], None]) -> QtWidgets.QButtonGroup:
+        row_layout = QtWidgets.QHBoxLayout()
+
+        row_label = QtWidgets.QLabel(label)
+        row_layout.addWidget(row_label)
+
+        button_group = QtWidgets.QButtonGroup(exclusive=True)
+        button_group.idClicked.connect(on_click)
 
         for i in range(1, 7):
-            button = QtWidgets.QPushButton(text=str(i), checkable=True, checked=(i == self.state.current_level))
-            self.level_group.addButton(button, id=i)
-            level_layout.addWidget(button)
+            button = QtWidgets.QPushButton(text=str(i), checkable=True, checked=(i == initial_value))
+            button_group.addButton(button, id=i)
+            row_layout.addWidget(button)
 
-        self.level_group.idClicked.connect(self.state.set_current_level)
-        self.setLayout(level_layout)
+        self.layout.addLayout(row_layout)
+        return button_group
+
+    def _set_min_level(self, level: int) -> None:
+        self.state.set_min_level(level)
+        self.update_ui()
+
+    def _set_max_level(self, level: int) -> None:
+        self.state.set_max_level(level)
+        self.update_ui()
+
+    def update_ui(self) -> None:
+        min_buttons = self.min_group.buttons()
+        max_buttons = self.max_group.buttons()
+
+        for i in range(6):
+            min_buttons[i].setEnabled(i <= self.state.max_level - 1)
+            max_buttons[i].setEnabled(i >= self.state.min_level - 1)
 
 class TextDisplayInner(QtWidgets.QWidget):
     state          : State
@@ -351,6 +404,7 @@ class MainWindow(QtWidgets.QWidget):
         self.refresh()
 
     def refresh(self) -> None:
+        self.level_selector.update_ui()
         self.text_display.populate()
         self.meaning_display.populate()
         self.control_buttons.update_ui()
