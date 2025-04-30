@@ -55,7 +55,7 @@ hanzi,level,frequency,pinyin,meanings
 现在,1,77,xiàn zài,now; at the moment; nowadays
 年,1,79,nián,year
 多,1,80,duō,many; much
-吗,1,83,ma,"(question particle for ""yes-no"" questions)"
+吗,1,83,ma,(question particle for yes-no questions)
 太,1,87,tài,very; too
 太多,1,,tài duō,a lot; too much
 太A了,1,,tài A le,very A; too much A
@@ -75,7 +75,7 @@ hanzi,level,frequency,pinyin,meanings
 几,1,178,jǐ,how much; how many; several; a few
 听,1,190,tīng,to listen to; to hear
 听见,1,,tīng jiàn,to hear
-开,1,195,kāi,to open; to turn on (a machine); to drive (a car)"
+开,1,195,kāi,to open; to turn on (a machine); to drive (a car)
 开车,1,,kāi chē,to drive a car
 叫,1,200,jiào,to call; to be called; to shout
 请,1,216,qǐng,to ask; to invite; please (do sth)
@@ -521,6 +521,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 以为,3,567,yǐ wéi,to think (i.e. to take it to be true that ...) (Usually there is an implication that the notion is mistaken – except when expressing one's own current opinion.)
 越,3,574,yuè,to exceed; to surpass
 越A越B,3,574,yuè A yuè B,"the more A, the more B"
+越来越A,3,,yuè lái yuè A,more and more;A is increasing over time
 城市,3,593,chéng shì,city; town
 影响,3,598,yǐng xiǎng,influence; impact; to influence; to affect
 游戏,3,603,yóu xì,game; to play
@@ -561,7 +562,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 声音,3,841,shēng yīn,voice; sound
 马上,3,847,mǎ shàng,right away; immediately; on horseback (i.e. by military force)
 表示,3,854,biǎo shì,to express; to show; to state; to mean
-经过,3,867,jīng guò,to pass; to go through; process; course
+经过,3,867,jīng guò,to pass; to go through
 历史,3,882,lì shǐ,history
 哭,3,898,kū,to cry; to weep
 敢,3,902,gǎn,to dare; daring
@@ -603,7 +604,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 一边A一边B,3,1241,yī biān A yī biān B,"on one hand A, on the other hand B"
 鞋,3,1249,xié,shoe
 鞋子,3,,xié zi,shoe
-习惯,3,1251,xí guàn,habit; custom; to be used to
+习惯,3,1251,xí guàn,to be used to; habit; custom
 变化,3,1262,biàn huà,change; variation; to change; to vary
 周末,3,1269,zhōu mò,weekend
 忘记,3,1335,wàng jì,to forget
@@ -771,6 +772,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 这么,3,,zhè me,such; so
 回答,3,1100,huí dá,to reply; to answer; reply; answer
 黄河,3,,huáng hé,the Yellow River
+后来,3,1055,hòu lái,afterwards; later
 对,4,28,duì,concerning; regarding
 对,4,28,duì,to treat (sb a certain way)
 对,4,28,duì,to face
@@ -1478,7 +1480,6 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 假,4,1053,jiǎ,suppose
 假,4,1053,jiǎ,variant of 假
 假,4,1053,jiǎ,to borrow
-后来,4,1055,hòu lái,afterwards; later
 后来,4,1055,hòu lái,newly arrived
 嘴,4,1059,zuǐ,mouth
 嘴,4,1059,zuǐ,beak
