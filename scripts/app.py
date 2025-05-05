@@ -30,26 +30,40 @@ class Entry:
     """The pinyin spellings of each character in this word or expression."""
     meanings : list[str]
     """Different ways to translate this word or expression into English."""
+    index: int
+    """Position of this entry in the `State.data` list."""
 
 
 class State:
-    data       : pd.DataFrame
+    data       : list[Entry]
     rng        : random.Random
     level_tops : list[int]
+    weights    : float
 
     min_level : int
     max_level : int
 
     entry_history : list[Entry]
+    """Timeline of entries that have been picked so far."""
     current_entry : int
+    """Index into the `entry_history` array indicating where we are in the timeline."""
+    prob_modifier : int
+    """Indicates wether the `current_entry`'s probability of being picked should be increased (+1), decreased (-1), or kept the same (0)."""
 
     show_pinyin : bool
 
     MAX_HISTORY : int = 128
 
+    WEIGHT_MULTIPLIER : float = 2.0
+    MIN_WEIGHT        : float = 1.0
+    STARTING_WEIGHT   : float = MIN_WEIGHT * (WEIGHT_MULTIPLIER ** 6)
+    MAX_WEIGHT        : float = STARTING_WEIGHT * (WEIGHT_MULTIPLIER ** 6)
+
     def __init__(self):
-        self.data = pd.read_csv("data/hsk-manual.csv")
-        self.level_tops = [ int(self.data.index[self.data["level"] <= i+1].max()) for i in range(6) ]
+        csv_data = pd.read_csv("data/hsk-manual.csv")
+        self.data = [ self._entry_from_csv(csv_data, i) for i in csv_data.index ]
+        self.level_tops = [ int(csv_data.index[csv_data["level"] <= i+1].max()) for i in range(6) ]
+        self.weights = [ self.STARTING_WEIGHT for _ in self.data ]
         self.rng = random.Random()
 
         self.min_level = 1
@@ -57,24 +71,25 @@ class State:
 
         self.entry_history = [ self.get_random_entry() ]
         self.current_entry = 0
+        self.prob_modifier = 0
 
         self.show_pinyin = False
 
-    def get_entry(self, idx: int) -> Entry:
-        assert idx in self.data.index, f"Expected a valid index, but {idx=} not contained in {self.data.index=}"
-        row = self.data.loc[idx]
+    def _entry_from_csv(self, csv_data: pd.DataFrame, index: int) -> Entry:
+        assert index in csv_data.index, f"{index=} not contained in {csv_data.index=}"
+        row = csv_data.loc[index]
 
         level = int(row["level"])
         characters = [ char for char in row["hanzi"] ]
         pinyin = row["pinyin"].split()
         meanings = [ entry.strip() for entry in row["meanings"].split(";") ]
 
-        assert 1 <= level <= 6, f"[{idx=}] Expected 1 <= level <= 6; found {level=}"
-        assert len(characters) > 0, f"[{idx=}] Expected at leas one character, found none!"
-        assert len(characters) == len(pinyin), f"[{idx=}] Expected characters and pinyin to have the same length; found {len(characters)=}; {len(pinyin)}. {characters=}; {pinyin=}"
-        assert len(meanings) > 0, f"[{idx=}] Expected at leas one meaning, found none!"
+        assert 1 <= level <= 6, f"[{index=}] Expected 1 <= level <= 6; found {level=}"
+        assert len(characters) > 0, f"[{index=}] Expected at leas one character, found none!"
+        assert len(characters) == len(pinyin), f"[{index=}] Expected characters and pinyin to have the same length; found {len(characters)=}; {len(pinyin)}. {characters=}; {pinyin=}"
+        assert len(meanings) > 0, f"[{index=}] Expected at leas one meaning, found none!"
 
-        return Entry(level, characters, pinyin, meanings)
+        return Entry(level, characters, pinyin, meanings, index)
 
     def set_min_level(self, level: int) -> None:
         assert 1 <= level <= 6, f"Expected 1 <= level <= 6; found {level=}"
@@ -92,29 +107,95 @@ class State:
         bottom = 0 if self.min_level < 2 else self.level_tops[self.min_level - 2] + 1
         top = self.level_tops[self.max_level-1]
 
-        idx = self.rng.randint(bottom, top)
-        entry = self.get_entry(idx)
-
+        entry = self.rng.choices(population=self.data[bottom:top+1], weights=self.weights[bottom:top+1])[0]
         return entry
 
+    def change_current_entry(self, new_idx: int) -> Entry:
+        """
+        Changes which entry is the current entry, and does any necessary updates and cleanup.
+        Returns the new current entry.
+
+        new_idx : int
+            Index into the `entry_history` list.
+        """
+        assert 0 <= self.current_entry < len(self.entry_history), f"Expected 0 <= self.current_entry <= {len(self.entry_history)}, but found {self.current_entry=}"
+        assert 0 <= new_idx < len(self.entry_history), f"Expected 0 <= new_idx <= {len(self.entry_history)}, but found {new_idx=}"
+
+        old_entry = self.entry_history[self.current_entry]
+        new_entry = self.entry_history[new_idx]
+
+        if new_idx == self.current_entry:
+            # Early exit, nothing to change.
+            return old_entry
+
+        if (self.prob_modifier > 0) and (self.weights[old_entry.index] < self.MAX_WEIGHT):
+            self.weights[old_entry.index] *= 2.0
+        elif (self.prob_modifier < 0) and (self.weights[old_entry.index] > self.MIN_WEIGHT):
+            self.weights[old_entry.index] /= 2.0
+
+        self.current_entry = new_idx
+        self.prob_modifier = 0
+
+        return new_entry
+
     def get_current_entry(self) -> Entry:
-        assert 0 <= self.current_entry < len(self.entry_history)
+        """Returns the current entry."""
+        assert 0 <= self.current_entry < len(self.entry_history), f"Expected 0 <= self.current_entry <= {len(self.entry_history)}, but found {self.current_entry=}"
         return self.entry_history[self.current_entry]
 
     def move_to_previous_entry(self) -> Entry:
-        if self.current_entry > 0:
-            self.current_entry -= 1
-        return self.get_current_entry()
+        """If there are earlier entries in the timeline, moves back to the immediately previous one and does any necessary updates and cleanup."""
+        return self.change_current_entry(new_idx=max(0, self.current_entry - 1))
 
     def move_to_next_entry(self) -> Entry:
-        if self.current_entry < len(self.entry_history) - 1:
-            self.current_entry += 1
-        else:
+        """
+        If there are later entries in the timeline, moves to the immediately next entry.
+        Otherwise, creates a new random entry at the front.
+        In any case, does any necessary updates and cleanup.
+        """
+
+        if self.current_entry == len(self.entry_history) - 1:
             self.entry_history.append(self.get_random_entry())
+
             if len(self.entry_history) > self.MAX_HISTORY:
                 self.entry_history.pop(0)
-            self.current_entry = len(self.entry_history) - 1
-        return self.get_current_entry()
+
+            new_idx = len(self.entry_history) - 1
+        else:
+            new_idx = self.current_entry + 1
+
+        return self.change_current_entry(new_idx)
+
+    def move_to_first_entry(self) -> Entry:
+        """
+        Moves to the very first entry in the entry history.
+        Does any necessary updates and cleanup.
+        """
+        return self.change_current_entry(new_idx=0)
+
+    def move_to_new_entry(self) -> Entry:
+        """
+        Moves to the front of the entry history and adds a new random entry.
+        Does any necessary updates and cleanup.
+        """
+        if self.current_entry < len(self.entry_history) - 1:
+            self.change_current_entry(len(self.entry_history) - 1)
+
+        return self.move_to_next_entry()
+
+    def increase_current_entry_likelihood(self) -> None:
+        """
+        Sets a flag indicating that the current entry's probability of being picked should be INCREASED (make it MORE likely).
+        The actual modification happens when the current entry is changed.
+        """
+        self.prob_modifier = +1
+
+    def decrease_current_entry_likelihood(self) -> None:
+        """
+        Sets a flag indicating that the current entry's probability of being picked should be DECREASED (make it LESS likely).
+        The actual modification happens when the current entry is changed.
+        """
+        self.prob_modifier = -1
 
 
 class LevelSelector(QtWidgets.QWidget):
@@ -291,18 +372,22 @@ class MeaningDisplay(QtWidgets.QWidget):
 class ControlButtons(QtWidgets.QWidget):
     state : State
 
-    prev_button : QtWidgets.QPushButton
-    show_button : QtWidgets.QPushButton
-    next_button : QtWidgets.QPushButton
+    button_prev  : QtWidgets.QPushButton
+    button_show  : QtWidgets.QPushButton
+    button_next  : QtWidgets.QPushButton
+    button_plus  : QtWidgets.QPushButton
+    button_minus : QtWidgets.QPushButton
 
     on_prev              : Callable[[], None]
     on_next              : Callable[[], None]
     on_toggle_visibility : Callable[[], None]
 
-    icon_show : QtGui.QIcon
-    icon_hide : QtGui.QIcon
-    icon_next : QtGui.QIcon
-    icon_prev : QtGui.QIcon
+    icon_show  : QtGui.QIcon
+    icon_hide  : QtGui.QIcon
+    icon_prev  : QtGui.QIcon
+    icon_next  : QtGui.QIcon
+    icon_plus  : QtGui.QIcon
+    icon_minus : QtGui.QIcon
 
     def __init__(self, state: State, on_prev: Callable[[], None], on_next: Callable[[], None], on_toggle_visibility: Callable[[], None]):
         super().__init__()
@@ -315,42 +400,69 @@ class ControlButtons(QtWidgets.QWidget):
         self.init_ui()
 
     def init_ui(self) -> None:
-        layout = QtWidgets.QHBoxLayout()
-        layout.setAlignment(Qt.AlignCenter)
+        layout = QtWidgets.QVBoxLayout()
 
         self.icon_show = QtGui.QIcon("data/eye.png")
         self.icon_hide = QtGui.QIcon("data/eye-slash.png")
         self.icon_next = QtGui.QIcon("data/square-caret-right.png")
         self.icon_prev = QtGui.QIcon("data/square-caret-left.png")
+        self.icon_plus = QtGui.QIcon("data/square-plus.png")
+        self.icon_minus = QtGui.QIcon("data/square-minus.png")
 
-        self.prev_button = QtWidgets.QPushButton(text="Prev")
-        self.prev_button.setIcon(self.icon_prev)
-        self.prev_button.setToolTip("Backspace")
-        self.prev_button.clicked.connect(self.on_prev)
-        layout.addWidget(self.prev_button)
+        # ---------------------------------------------------------------- #
 
-        self.show_button = QtWidgets.QPushButton(text="Show")
-        self.show_button.setIcon(self.icon_show)
-        self.show_button.setToolTip("Space")
-        self.show_button.clicked.connect(self.on_toggle_visibility)
-        layout.addWidget(self.show_button)
+        first_row = QtWidgets.QHBoxLayout()
 
-        self.next_button = QtWidgets.QPushButton(text="Next")
-        self.next_button.setIcon(self.icon_next)
-        self.next_button.setToolTip("Enter")
-        self.next_button.clicked.connect(self.on_next)
-        layout.addWidget(self.next_button)
+        self.button_prev = QtWidgets.QPushButton(text="Prev")
+        self.button_prev.setIcon(self.icon_prev)
+        self.button_prev.setToolTip("Backspace")
+        self.button_prev.clicked.connect(self.on_prev)
+        first_row.addWidget(self.button_prev)
+
+        self.button_show = QtWidgets.QPushButton(text="Show")
+        self.button_show.setIcon(self.icon_show)
+        self.button_show.setToolTip("Space")
+        self.button_show.clicked.connect(self.on_toggle_visibility)
+        first_row.addWidget(self.button_show)
+
+        self.button_next = QtWidgets.QPushButton(text="Next")
+        self.button_next.setIcon(self.icon_next)
+        self.button_next.setToolTip("Enter")
+        self.button_next.clicked.connect(self.on_next)
+        first_row.addWidget(self.button_next)
+
+        layout.addLayout(first_row)
+
+        # ---------------------------------------------------------------- #
+
+        second_row = QtWidgets.QHBoxLayout()
+
+        self.button_plus = QtWidgets.QPushButton(text="Show More")
+        self.button_plus.setIcon(self.icon_plus)
+        self.button_plus.setToolTip("+")
+        self.button_plus.clicked.connect(self.state.increase_current_entry_likelihood)
+        second_row.addWidget(self.button_plus)
+
+        self.button_minus = QtWidgets.QPushButton(text="Show Less")
+        self.button_minus.setIcon(self.icon_minus)
+        self.button_minus.setToolTip("-")
+        self.button_minus.clicked.connect(self.state.decrease_current_entry_likelihood)
+        second_row.addWidget(self.button_minus)
+
+        layout.addLayout(second_row)
+
+        # ---------------------------------------------------------------- #
 
         self.setLayout(layout)
         self.update_ui()
 
     def update_ui(self) -> None:
         if self.state.show_pinyin:
-            self.show_button.setText("Hide")
-            self.show_button.setIcon(self.icon_hide)
+            self.button_show.setText("Hide")
+            self.button_show.setIcon(self.icon_hide)
         else:
-            self.show_button.setText("Show")
-            self.show_button.setIcon(self.icon_show)
+            self.button_show.setText("Show")
+            self.button_show.setIcon(self.icon_show)
 
 
 class MainWindow(QtWidgets.QWidget):
@@ -414,21 +526,30 @@ class MainWindow(QtWidgets.QWidget):
         self.refresh()
 
     def eventFilter(self, obj: QtCore.QObject, event: QtCore.QEvent) -> bool:
-        if event.type() == QtCore.QEvent.KeyPress and event.key() == Qt.Key_Backspace:
-            self.step_back()
-            return True
+        if event.type() == QtCore.QEvent.KeyPress:
+            if event.key() == Qt.Key_Backspace:
+                self.step_back()
+                return True
 
-        if event.type() == QtCore.QEvent.KeyPress and event.key() == Qt.Key_Return:
-            self.step_forward()
-            return True
+            if event.key() == Qt.Key_Return:
+                self.step_forward()
+                return True
 
-        if event.type() == QtCore.QEvent.KeyPress and event.key() == Qt.Key_Space:
-            self.toggle_pinyin()
-            return True
+            if event.key() == Qt.Key_Minus:
+                self.state.decrease_current_entry_likelihood()
+                return True
 
-        if event.type() == QtCore.QEvent.KeyPress and event.key() == Qt.Key_Escape:
-            self.app.quit()
-            return True
+            if event.key() == Qt.Key_Equal: # It's the key that has the plus sign in US layout.
+                self.state.increase_current_entry_likelihood()
+                return True
+
+            if event.key() == Qt.Key_Space:
+                self.toggle_pinyin()
+                return True
+
+            if event.key() == Qt.Key_Escape:
+                self.app.quit()
+                return True
 
         return super().eventFilter(obj, event)
 
