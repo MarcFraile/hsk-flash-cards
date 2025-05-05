@@ -183,20 +183,6 @@ class State:
 
         return self.move_to_next_entry()
 
-    def increase_current_entry_likelihood(self) -> None:
-        """
-        Sets a flag indicating that the current entry's probability of being picked should be INCREASED (make it MORE likely).
-        The actual modification happens when the current entry is changed.
-        """
-        self.prob_modifier = +1
-
-    def decrease_current_entry_likelihood(self) -> None:
-        """
-        Sets a flag indicating that the current entry's probability of being picked should be DECREASED (make it LESS likely).
-        The actual modification happens when the current entry is changed.
-        """
-        self.prob_modifier = -1
-
 
 class LevelSelector(QtWidgets.QWidget):
     state     : State
@@ -437,16 +423,16 @@ class ControlButtons(QtWidgets.QWidget):
 
         second_row = QtWidgets.QHBoxLayout()
 
-        self.button_plus = QtWidgets.QPushButton(text="Show More")
+        self.button_plus = QtWidgets.QPushButton(text="Show More", checkable=True)
         self.button_plus.setIcon(self.icon_plus)
         self.button_plus.setToolTip("+")
-        self.button_plus.clicked.connect(self.state.increase_current_entry_likelihood)
+        self.button_plus.clicked.connect(self.on_plus)
         second_row.addWidget(self.button_plus)
 
-        self.button_minus = QtWidgets.QPushButton(text="Show Less")
+        self.button_minus = QtWidgets.QPushButton(text="Show Less", checkable=True)
         self.button_minus.setIcon(self.icon_minus)
         self.button_minus.setToolTip("-")
-        self.button_minus.clicked.connect(self.state.decrease_current_entry_likelihood)
+        self.button_minus.clicked.connect(self.on_minus)
         second_row.addWidget(self.button_minus)
 
         layout.addLayout(second_row)
@@ -463,6 +449,17 @@ class ControlButtons(QtWidgets.QWidget):
         else:
             self.button_show.setText("Show")
             self.button_show.setIcon(self.icon_show)
+
+        self.button_plus.setChecked(self.state.prob_modifier > 0)
+        self.button_minus.setChecked(self.state.prob_modifier < 0)
+
+    def on_plus(self) -> None:
+        self.state.prob_modifier = 0 if (self.state.prob_modifier > 0) else +1
+        self.update_ui()
+
+    def on_minus(self) -> None:
+        self.state.prob_modifier = 0 if (self.state.prob_modifier < 0) else -1
+        self.update_ui()
 
 
 class MainWindow(QtWidgets.QWidget):
@@ -536,11 +533,11 @@ class MainWindow(QtWidgets.QWidget):
                 return True
 
             if event.key() == Qt.Key_Minus:
-                self.state.decrease_current_entry_likelihood()
+                self.control_buttons.on_minus()
                 return True
 
             if event.key() == Qt.Key_Equal: # It's the key that has the plus sign in US layout.
-                self.state.increase_current_entry_likelihood()
+                self.control_buttons.on_plus()
                 return True
 
             if event.key() == Qt.Key_Space:
