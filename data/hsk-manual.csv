@@ -667,7 +667,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 安静,3,2501,ān jìng,quiet; peaceful; calm
 作业,3,2574,zuò yè,school assignment; homework; task
 瘦,3,2595,shòu,thin; to lose weight
-绿,3,2608,lu:4,green
+绿,3,2608,lǜ,green
 酒,3,,jiǔ,alcoholic beverage
 啤酒,3,2622,pí jiǔ,beer
 酒店,3,,jiǔ diàn,hotel; restaurant; pub; wine shop
@@ -1152,9 +1152,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 活动,4,605,huó dòng,campaign
 活动,4,605,huó dòng,maneuver
 活动,4,605,huó dòng,behavior
-考虑,4,607,kǎo lu:4,to think over
-考虑,4,607,kǎo lu:4,to consider
-考虑,4,607,kǎo lu:4,consideration
+考虑,4,607,kǎo lǜ,to think over; to consider; consideration
 份,4,608,fèn,"classifier for gifts, newspaper, magazine, papers, reports, contracts etc"
 份,4,608,fèn,variant of 分
 提供,4,621,tí gōng,to offer
@@ -1307,7 +1305,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 光,4,800,guāng,only; merely
 光,4,800,guāng,used up; finished
 光,4,800,guāng,to leave (a part of the body) uncovered
-法律,4,816,fǎ lu:4,law
+法律,4,816,fǎ lǜ,law
 父亲,4,817,fù qīn,father
 父亲,4,817,fù qīn,also pr. [fù qin]
 并且,4,827,bìng qiě,and
@@ -1619,7 +1617,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 抱,4,1238,bào,to surround
 抱,4,1238,bào,to cherish
 抱,4,1238,bào,(coll.) (of clothes) to fit nicely
-律师,4,1246,lu:4 shī,lawyer
+律师,4,1246,lǜ shī,lawyer
 内容,4,1246,nèi róng,content
 内容,4,1246,nèi róng,substance
 内容,4,1246,nèi róng,details
@@ -5660,11 +5658,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 粒,5,4781,lì,grain
 粒,5,4781,lì,granule
 粒,5,4781,lì,"classifier for small round things (peas, bullets, peanuts, pills, grains etc)"
-规律,5,4786,guī lu:4,rule (e.g. of science)
-规律,5,4786,guī lu:4,law of behavior
-规律,5,4786,guī lu:4,regular pattern
-规律,5,4786,guī lu:4,rhythm
-规律,5,4786,guī lu:4,discipline
+规律,5,4786,guī lǜ,rule (e.g. of science); law of behavior; regular pattern; rhythm; discipline
 待遇,5,4791,dài yù,treatment
 待遇,5,4791,dài yù,pay
 待遇,5,4791,dài yù,salary
@@ -5799,7 +5793,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 预防,5,5185,yù fáng,to guard against
 预防,5,5185,yù fáng,precautionary
 预防,5,5185,yù fáng,prophylactic
-效率,5,5188,xiào lu:4,efficiency
+效率,5,5188,xiào lǜ,efficiency
 情景,5,5196,qíng jǐng,scene
 情景,5,5196,qíng jǐng,spectacle
 情景,5,5196,qíng jǐng,circumstances
@@ -6074,7 +6068,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 洒,5,6215,sǎ,to shed
 等候,5,6248,děng hòu,to wait
 等候,5,6248,děng hòu,to wait for
-纪律,5,6250,jì lu:4,discipline
+纪律,5,6250,jì lǜ,discipline
 面积,5,6252,miàn jī,"area (of a floor, piece of land etc)"
 面积,5,6252,miàn jī,surface area
 面积,5,6252,miàn jī,tract of land
@@ -6225,8 +6219,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 歇,5,6962,xiē,(dialect) to sleep
 歇,5,6962,xiē,a moment
 歇,5,6962,xiē,a short while
-侵略,5,6964,qīn lu:è,to invade
-侵略,5,6964,qīn lu:è,invasion
+侵略,5,6964,qīn lüè,to invade; invasion
 题目,5,7020,tí mù,subject
 题目,5,7020,tí mù,title
 题目,5,7020,tí mù,topic
@@ -6928,7 +6921,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 嘱咐,5,17575,zhǔ fù,injunction
 胡须,5,17602,hú xū,beard
 元旦,5,17634,Yuán dàn,New Year's Day
-汇率,5,18037,huì lu:4,exchange rate
+汇率,5,18037,huì lǜ,exchange rate
 鼠标,5,18087,shǔ biāo,mouse (computing)
 急忙,5,18562,jí máng,hastily
 结账,5,18659,jié zhàng,to pay the bill
@@ -6937,8 +6930,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 胶水,5,19095,jiāo shuǐ,glue
 打喷嚏,5,19233,dǎ pēn tì,to sneeze
 国庆节,5,19292,Guó qìng jié,PRC National Day (October 1st)
-省略,5,19480,shěng lu:è,to leave out
-省略,5,19480,shěng lu:è,an omission
+省略,5,19480,shěng lüè,to leave out; an omission
 夹子,5,19836,jiā zi,clip
 夹子,5,19836,jiā zi,clamp
 夹子,5,19836,jiā zi,tongs
@@ -7564,8 +7556,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 发动,6,3090,fā dòng,to unleash
 发动,6,3090,fā dòng,to mobilize
 发动,6,3090,fā dòng,to arouse
-策略,6,3096,cè lu:è,strategy; tactics
-策略,6,3096,cè lu:è,crafty; adroit
+策略,6,3096,cè lüè,strategy; tactics; crafty; adroit
 牺牲,6,3100,xī shēng,to sacrifice one's life
 牺牲,6,3100,xī shēng,to sacrifice (sth valued)
 牺牲,6,3100,xī shēng,beast slaughtered as a sacrifice
@@ -7665,7 +7656,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 清醒,6,3278,qīng xǐng,clear-headed
 清醒,6,3278,qīng xǐng,sober
 清醒,6,3278,qīng xǐng,awake
-战略,6,3278,zhàn lu:è,strategy
+战略,6,3278,zhàn lüè,strategy
 艰难,6,3288,jiān nán,difficult
 艰难,6,3288,jiān nán,hard
 艰难,6,3288,jiān nán,challenging
@@ -8302,7 +8293,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 灵感,6,4591,líng gǎn,inspiration
 灵感,6,4591,líng gǎn,insight
 灵感,6,4591,líng gǎn,a burst of creativity in scientific or artistic endeavor
-忽略,6,4602,hū lu:è,to neglect; to overlook; to ignore
+忽略,6,4602,hū lüè,to neglect; to overlook; to ignore
 失误,6,4614,shī wù,lapse
 失误,6,4614,shī wù,mistake
 失误,6,4614,shī wù,to make a mistake
@@ -8470,7 +8461,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 分裂,6,4860,fēn liè,to break up
 分裂,6,4860,fēn liè,fission
 分裂,6,4860,fēn liè,schism
-频率,6,4871,pín lu:4,frequency
+频率,6,4871,pín lǜ,frequency
 互联网,6,4872,Hù lián wǎng,Internet
 报复,6,4880,bào fù,to make reprisals; to retaliate
 报复,6,4880,bào fù,revenge; retaliation
@@ -9775,11 +9766,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 掩护,6,7317,yǎn hù,to cover
 掩护,6,7317,yǎn hù,protection
 掩护,6,7317,yǎn hù,cover
-虐待,6,7321,nu:è dài,to mistreat
-虐待,6,7321,nu:è dài,to maltreat
-虐待,6,7321,nu:è dài,to abuse
-虐待,6,7321,nu:è dài,mistreatment
-虐待,6,7321,nu:è dài,maltreatment
+虐待,6,7321,nüè dài,to mistreat; to abuse; mistreatment
 政权,6,7321,zhèng quán,regime
 政权,6,7321,zhèng quán,political power
 胃口,6,7324,wèi kǒu,appetite
@@ -10169,7 +10156,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 掀起,6,8186,xiān qǐ,(of a storm) to surge; to stir up (waves etc)
 掀起,6,8186,xiān qǐ,"(fig.) to trigger; set off (a wave of popularity, a controversy etc)"
 界限,6,8187,jiè xiàn,boundary
-旋律,6,8207,xuán lu:4,melody
+旋律,6,8207,xuán lǜ,melody
 固执,6,8209,gù zhí,obstinate
 固执,6,8209,gù zhí,stubborn
 固执,6,8209,gù zhí,to fixate on
@@ -10863,8 +10850,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 机动,6,9881,jī dòng,power-driven
 机动,6,9881,jī dòng,adaptable
 机动,6,9881,jī dòng,"flexible (use, treatment, timing etc)"
-过滤,6,9885,guò lu:4,to filter
-过滤,6,9885,guò lu:4,filter
+过滤,6,9885,guò lǜ,to filter; filter
 广阔,6,9885,guǎng kuò,wide
 广阔,6,9885,guǎng kuò,vast
 偏见,6,9888,piān jiàn,prejudice
@@ -10917,8 +10903,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 瀑布,6,10033,pù bù,waterfall
 动员,6,10037,dòng yuán,to mobilize
 动员,6,10037,dòng yuán,mobilization
-顾虑,6,10038,gù lu:4,misgivings
-顾虑,6,10038,gù lu:4,apprehensions
+顾虑,6,10038,gù lǜ,misgivings; apprehensions
 恐吓,6,10053,kǒng hè,to threaten
 恐吓,6,10053,kǒng hè,to menace
 理所当然,6,10068,lǐ suǒ dāng rán,as it should be by rights (idiom); proper and to be expected as a matter of course
@@ -11225,7 +11210,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 精通,6,10968,jīng tōng,to master (a subject)
 海滨,6,10973,hǎi bīn,shore
 海滨,6,10973,hǎi bīn,seaside
-利率,6,10983,lì lu:4,interest rates
+利率,6,10983,lì lǜ,interest rates
 腐蚀,6,10998,fǔ shí,corrosion
 腐蚀,6,10998,fǔ shí,to corrode (degrade chemically)
 腐蚀,6,10998,fǔ shí,to rot
@@ -11795,8 +11780,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 对立,6,12725,duì lì,relative opposite
 对立,6,12725,duì lì,opposing
 对立,6,12725,duì lì,diametrical
-掠夺,6,12733,lu:è duó,to plunder
-掠夺,6,12733,lu:è duó,to rob
+掠夺,6,12733,lüè duó,to plunder; to rob
 剥削,6,12734,bō xuē,to exploit
 剥削,6,12734,bō xuē,exploitation
 话筒,6,12761,huà tǒng,microphone
@@ -12104,10 +12088,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 文艺,6,13887,wén yì,literature and art
 依次,6,13888,yī cì,in order
 依次,6,13888,yī cì,in succession
-一律,6,13897,yī lu:4,same
-一律,6,13897,yī lu:4,uniformly
-一律,6,13897,yī lu:4,all
-一律,6,13897,yī lu:4,without exception
+一律,6,13897,yī lǜ,same; uniformly; all; without exception
 照耀,6,13897,zhào yào,to shine
 照耀,6,13897,zhào yào,to illuminate
 对称,6,13912,duì chèn,symmetry
@@ -13040,7 +13021,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 镶嵌,6,19000,xiāng qiàn,to set (e.g. a jewel in a ring)
 镶嵌,6,19000,xiāng qiàn,tiling
 镶嵌,6,19000,xiāng qiàn,tesselation
-无忧无虑,6,19001,wú yōu wú lu:4,carefree and without worries (idiom)
+无忧无虑,6,19001,wú yōu wú lǜ,carefree and without worries (idiom)
 固有,6,19015,gù yǒu,intrinsic to sth
 固有,6,19015,gù yǒu,inherent
 固有,6,19015,gù yǒu,native
@@ -13189,8 +13170,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 压榨,6,20212,yā zhà,"to extract juice, oil etc by squeezing"
 及早,6,20217,jí zǎo,at the earliest possible time; as soon as possible
 合身,6,20268,hé shēn,well-fitting (of clothes)
-略微,6,20310,lu:è wēi,a little bit
-略微,6,20310,lu:è wēi,slightly
+略微,6,20310,lüè wēi,a little bit; slightly
 隔阂,6,20336,gé hé,misunderstanding
 隔阂,6,20336,gé hé,estrangement
 隔阂,6,20336,gé hé,(language etc) barrier
