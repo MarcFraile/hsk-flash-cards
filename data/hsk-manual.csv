@@ -735,7 +735,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 爱好,3,4902,ài hào,hobby; interest; to take pleasure in; to be keen on
 衬衫,3,4988,chèn shān,shirt; blouse
 冬,3,5272,dōng,winter
-裙子,3,5466,qún zi,skirt
+裙子,3,5466,qún zi,skirt; (women's) dress
 香蕉,3,5473,xiāng jiāo,banana
 秋,3,5603,qiū,autumn; fall; harvest time
 发烧,3,5836,fā shāo,to have a fever
@@ -773,6 +773,9 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 回答,3,1100,huí dá,to reply; to answer; reply; answer
 黄河,3,,huáng hé,the Yellow River
 后来,3,1055,hòu lái,afterwards; later
+长,3,,zhǎng,to grow
+长得,3,,zhǎng de,"to look (like someone); to look (beautiful, fat…)"
+嘴,3,1059,zuǐ,mouth; beak
 对,4,28,duì,concerning; regarding
 对,4,28,duì,to treat (sb a certain way)
 对,4,28,duì,to face
@@ -1481,10 +1484,6 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 假,4,1053,jiǎ,variant of 假
 假,4,1053,jiǎ,to borrow
 后来,4,1055,hòu lái,newly arrived
-嘴,4,1059,zuǐ,mouth
-嘴,4,1059,zuǐ,beak
-嘴,4,1059,zuǐ,nozzle
-嘴,4,1059,zuǐ,spout (of teapot etc)
 地址,4,1067,dì zhǐ,address
 无论,4,1069,wú lùn,no matter what or how
 无论,4,1069,wú lùn,regardless of whether...
