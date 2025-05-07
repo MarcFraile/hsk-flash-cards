@@ -143,7 +143,7 @@ hanzi,level,frequency,pinyin,meanings
 十,1,865,shí,10
 见,1,,jiàn,to see; to meet
 看见,1,870,kàn jiàn,to see; to catch sight of
-女儿,1,879,nǔ ér,daughter
+女儿,1,879,nǚ ér,daughter
 说话,1,880,shuō huà,to speak; to talk
 爸爸,1,908,bà ba,father; dad
 字,1,913,zì,letter; character; word
@@ -464,7 +464,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 比赛,3,275,bǐ sài,competition (sports etc); match; to compete
 然后,3,275,rán hòu,then; after that; afterwards
 担心,3,277,dān xīn,to worry; to be anxious; anxious; worried
-条,3,277,tiáo,"(classifier for long thin things: ribbon, river, road, trousers, etc.); strip"
+条,3,277,tiáo,"(classifier for long things: river, road, trousers, etc.); strip"
 放,3,280,fàng,to put; to place
 拿,3,287,ná,to take; to hold; to catch
 拿A来说,3,,ná A lái shuō,take A as an example
@@ -776,6 +776,11 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 长,3,,zhǎng,to grow
 长得,3,,zhǎng de,"to look (like someone); to look (beautiful, fat…)"
 嘴,3,1059,zuǐ,mouth; beak
+个子,3,10888,gè zi,height; stature
+留学,3,15630,liú xué,to study abroad
+留学生,3,,liú xué shēng,foreign student; international student
+起来,3,172,qǐ lai,to get up; to stand up
+想起来,3,,xiǎng qǐ lai,to remember; to recall; to realize
 对,4,28,duì,concerning; regarding
 对,4,28,duì,to treat (sb a certain way)
 对,4,28,duì,to face
@@ -865,8 +870,6 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 起来,4,172,qi lai,indicating completion
 起来,4,172,qi lai,"(after a perception verb, e.g. 看) expressing preliminary judgment"
 起来,4,172,qi lai,also pr. [qǐ lai]
-起来,4,172,qǐ lai,to stand up
-起来,4,172,qǐ lai,to get up
 起来,4,172,qǐ lai,also pr. [qǐ lái]
 死,4,177,sǐ,to die
 死,4,177,sǐ,impassable
@@ -2815,10 +2818,6 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 堵车,4,10563,dǔ chē,traffic jam
 堵车,4,10563,dǔ chē,(of traffic) to get congested
 西红柿,4,10725,xī hóng shì,tomato
-个子,4,10888,gè zi,height
-个子,4,10888,gè zi,stature
-个子,4,10888,gè zi,build
-个子,4,10888,gè zi,size
 大使馆,4,11530,dà shǐ guǎn,embassy
 饺子,4,11834,jiǎo zi,dumpling; gyoza
 垃圾桶,4,11938,lā jī tǒng,rubbish bin
@@ -2841,7 +2840,6 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 干杯,4,14023,gān bēi,lit. dry cup
 复印,4,14608,fù yìn,to photocopy
 复印,4,14608,fù yìn,to duplicate a document
-留学,4,15630,liú xué,to study abroad
 湿润,4,15795,shī rùn,moist
 羽毛球,4,16966,yǔ máo qiú,shuttlecock
 羽毛球,4,16966,yǔ máo qiú,badminton
