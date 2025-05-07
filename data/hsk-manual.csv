@@ -442,6 +442,7 @@ A地V,3,132,A de V,A-ly V; (indicates A is an adverb affecting the verb V)
 跟,3,135,gēn,to; towards; with
 像,3,151,xiàng,to resemble; to be like; appearance; image
 还是,3,160,hái shi,still (as before); or
+（是）A还是B,3,,( shì ) A hái shì B,A or B? (binary choice)
 认为,3,168,rèn wéi,to believe; to think; to consider; to feel
 应该,3,174,yīng gāi,ought to; should; must
 带,3,177,dài,to bring; to carry
@@ -468,6 +469,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 放,3,280,fàng,to put; to place
 拿,3,287,ná,to take; to hold; to catch
 拿A来说,3,,ná A lái shuō,take A as an example
+对S来说,3,,duì S lái shuō,according to S
 为什么,3,299,wèi shén me,why?; for what reason?
 先,3,306,xiān,first; prior; former
 关系,3,318,guān xi,relationship; relation
@@ -490,7 +492,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 使,3,400,shǐ,envoy; messenger
 其实,3,405,qí shí,actually; in fact; really
 以后,3,407,yǐ hòu,after; later; afterwards
-要求,3,409,yāo qiú,to request; to require; requirement
+要求,3,409,yāo qiú,to request; to require; request; requirement
 信,3,419,xìn,letter; mail; to trust; trust
 当然,3,423,dāng rán,certainly; of course; without doubt
 接,3,425,jiē,to receive
@@ -526,7 +528,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 影响,3,598,yǐng xiǎng,influence; impact; to influence; to affect
 游戏,3,603,yóu xì,game; to play
 马,3,605,mǎ,horse
-比较,3,607,bǐ jiào,to compare; to contrast; comparatively; relatively
+比较,3,607,bǐ jiào,comparatively; relatively; fairly
 最近,3,612,zuì jìn,recently; soon
 换,3,618,huàn,"to change (clothes, etc.); to exchange; to substitute"
 终于,3,625,zhōng yú,at last; in the end; finally; eventually
@@ -594,7 +596,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 刚才,3,1149,gāng cái,just now; a moment ago
 办公室,3,1162,bàn gōng shì,office; bureau
 环境,3,1171,huán jìng,environment; circumstances; surroundings; ambient
-关心,3,1190,guān xīn,to be concerned about; to care about
+关心,3,1190,guān xīn,to care about; to be concerned about
 祝,3,1197,zhù,"to wish (sb bon voyage, happy birthday etc); to pray for"
 层,3,1202,céng,to pile on top of one another; layer; stratum; (classifier for layers)
 腿,3,1216,tuǐ,leg
@@ -781,6 +783,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 留学生,3,,liú xué shēng,foreign student; international student
 起来,3,172,qǐ lai,to get up; to stand up
 想起来,3,,xiǎng qǐ lai,to remember; to recall; to realize
+大小,3,,dà xiǎo,dimension; magnitude; size
 对,4,28,duì,concerning; regarding
 对,4,28,duì,to treat (sb a certain way)
 对,4,28,duì,to face
