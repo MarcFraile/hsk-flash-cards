@@ -719,11 +719,14 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 图书馆,3,3836,tú shū guǎn,library
 电梯,3,3894,diàn tī,elevator; escalator
 刮,3,3910,guā,to blow
+风,3,,fēng,wind
+刮风,3,,guā fēng,to be windy; the wind blows
 矮,3,3952,ǎi,short (in height); low (vertically)
 眼镜,3,3998,yǎn jìng,spectacles; eyeglasses
 上网,3,4061,shàng wǎng,to go online; to be online; to be uploaded to the Internet
 春,3,4065,chūn,spring (season); joyful; youthful
 面包,3,4138,miàn bāo,bread
+冰,3,,bīng,ice
 冰箱,3,4168,bīng xiāng,freezer; refrigerator; icebox
 阿姨,3,4355,ā yí,moster; step-mother; woman of similar age to one's parents
 超市,3,4427,chāo shì,supermarket (abbr. for 超级市场)
@@ -6712,8 +6715,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 艰巨,5,11441,jiān jù,very difficult
 艰巨,5,11441,jiān jù,formidable
 陆地,5,11452,lù dì,dry land (as opposed to the sea)
-滑冰,5,11501,huá bīng,to skate
-滑冰,5,11501,huá bīng,skating
+滑冰,5,11501,huá bīng,to skate; skating
 惭愧,5,11505,cán kuì,ashamed
 交际,5,11527,jiāo jì,communication
 交际,5,11527,jiāo jì,social intercourse
@@ -13177,8 +13179,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 隔阂,6,20336,gé hé,(language etc) barrier
 荧屏,6,20338,yíng píng,fluorescent screen
 荧屏,6,20338,yíng píng,TV screen
-冰雹,6,20357,bīng báo,hail
-冰雹,6,20357,bīng báo,hailstone
+冰雹,6,20357,bīng báo,hail; hailstone
 疙瘩,6,20368,gē da,swelling or lump on skin; pimple
 疙瘩,6,20368,gē da,knot; lump
 疙瘩,6,20368,gē da,preoccupation; problem
