@@ -481,7 +481,7 @@ class MainWindow(QtWidgets.QWidget):
 
         self.state = State()
         self.latin_font = QtGui.QFont("Arial", pointSize=16)
-        self.character_font = QtGui.QFont("KaiTi", pointSize=80)
+        self.character_font = QtGui.QFont("KaiTi, 'AR PL UKai CN'", pointSize=80)
 
         self.init_ui()
 
