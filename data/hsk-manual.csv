@@ -487,9 +487,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 机会,3,393,jī huì,opportunity; chance; occasion
 别人,3,397,bié ren,other people; others; other person
 站,3,399,zhàn,to stand; to halt; to stop
-使,3,400,shǐ,to cause; to enable; to use; to employ
-使,3,400,shǐ,to instruct sb to do sth
-使,3,400,shǐ,envoy; messenger
+使,3,400,shǐ,to cause; to enable; to use; to instruct sb to do sth; envoy; messenger
 其实,3,405,qí shí,actually; in fact; really
 以后,3,407,yǐ hòu,after; later; afterwards
 要求,3,409,yāo qiú,to request; to require; request; requirement
@@ -533,9 +531,10 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 换,3,618,huàn,"to change (clothes, etc.); to exchange; to substitute"
 终于,3,625,zhōng yú,at last; in the end; finally; eventually
 脸,3,629,liǎn,face
-口,3,637,kǒu,"mouth; (classifier for things with mouths: people, domestic animals, cannons, wells, etc.); (classifier for bites or mouthfuls)"
+口,3,637,kǒu,"mouth; (classifier for family members, domestic animals, etc.); (classifier for bites or mouthfuls)"
 除了,3,638,chú le,besides; in addition to; except (for)
-除了A还B,3,638,chú le A hái B,"apart from A, also B"
+除了A还B,3,,chú le A hái B,"apart from A, also B"
+除了A都B,3,638,chú le A dōu B,"except for A, everyone / everything is B"
 总是,3,638,zǒng shì,always
 双,3,642,shuāng,pair; (measure word for pairs)
 突然,3,644,tū rán,sudden; abrupt; unexpected
@@ -585,6 +584,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 附近,3,1020,fù jìn,nearby; neighboring; neighborhood
 认真,3,1020,rèn zhēn,conscientious; earnest; serious
 脚,3,1024,jiǎo,foot
+主,3,,zhǔ,master; Lord; main
 主要,3,1031,zhǔ yào,main; primary; principal
 遇到,3,1063,yù dào,to meet; to run into; to come across
 年轻,3,1100,nián qīng,young
@@ -598,7 +598,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 环境,3,1171,huán jìng,environment; circumstances; surroundings; ambient
 关心,3,1190,guān xīn,to care about; to be concerned about
 祝,3,1197,zhù,"to wish (sb bon voyage, happy birthday etc); to pray for"
-层,3,1202,céng,to pile on top of one another; layer; stratum; (classifier for layers)
+层,3,1202,céng,(classifier for floors in a building)
 腿,3,1216,tuǐ,leg
 班,3,1238,bān,class; team; squad; work shift
 坏,3,1239,huài,bad; spoiled; broken; to break down
@@ -657,6 +657,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 骑,3,2231,qí,"to ride (a horse, bike etc)"
 河,3,2245,hé,river
 搬,3,2254,bān,to move (to a new residence); to move (something heavy or bulky)
+搬家,3,,bān jiā,to move (to a new residence)
 同事,3,2337,tóng shì,colleague; co-worker
 舒服,3,2343,shū fu,comfortable; feeling well
 体育,3,2354,tǐ yù,sports; physical education
@@ -682,13 +683,9 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 碗,3,2866,wǎn,bowl; (measure word for bowls)
 数学,3,3024,shù xué,mathematics; mathematical
 地铁,3,3046,dì tiě,subway; metro
-刷,3,3060,shuà,to select
-刷,3,3060,shuā,to brush
-刷,3,3060,shuā,to paint
-刷,3,3060,shuā,to daub
-刷,3,3060,shuā,to paste up
-刷,3,3060,shuā,to skip class (of students)
-刷,3,3060,shuā,to fire from a job
+刷,3,3060,shuā,to brush; to paint; to daub
+牙,3,,yá,tooth
+刷牙,3,,shuā yá,to brush one's teeth
 厨房,3,3076,chú fáng,kitchen
 练习,3,3084,liàn xí,practice; exercise; to practice
 爷爷,3,3099,yé ye,farfar
@@ -712,7 +709,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 刻,3,3756,kè,to engrave
 刻,3,3756,kè,to cut
 刻,3,3756,kè,oppressive
-刻,3,3756,kè,classifier for short time intervals
+刻,3,3756,kè,(classifier for short time intervals)
 锻炼,3,3764,duàn liàn,to toughen; to temper; to work out; to develop one's skills
 裤子,3,3765,kù zi,pants; trousers
 夏,3,3828,xià,summer
