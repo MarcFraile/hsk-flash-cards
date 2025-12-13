@@ -426,6 +426,7 @@ A比BC,2,155,A bǐ B C,A is more C than B
 回国,2,,huí guó,to go back to one's country
 啊,3,47,a,"(interjection showing surprise); (modal particle showing enthusiasm)"
 把,3,50,bà,"handle; to hold; to grasp; (classifier: handful, bundle, bunch); classifier for things with handles"
+S把OV,3,50,S bǎ O V,(same as SVO with emphasis on the verb)
 被,3,54,bèi,quilt; to cover (with); (indicator of passive voice)
 自己,3,56,zì jǐ,oneself; one's own
 用,3,79,yòng,to use; to employ; to have to
@@ -540,6 +541,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 突然,3,644,tū rán,sudden; abrupt; unexpected
 段,3,647,duàn,"(classifier for stories, periods of time, lengths of thread etc)"
 检查,3,659,jiǎn chá,to inspect; to examine; inspection
+查,3,,chá,to check; to research
 米,3,663,mǐ,meter (classifier)
 容易,3,664,róng yì,easy; straightforward
 明白,3,676,míng bai,to understand; to realize; clear; obvious
@@ -547,7 +549,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 记得,3,699,jì de,to remember
 辆,3,699,liàng,classifier for vehicles
 简单,3,726,jiǎn dān,simple; not complicated
-半,3,727,bàn,half
+半,3,727,bàn,half; and a half (after a number)
 愿意,3,738,yuàn yì,willing (to do sth); ready
 音乐,3,742,yīn yuè,music
 包,3,755,bāo,bag; wrapper; to cover; to wrap
@@ -628,7 +630,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 照顾,3,1631,zhào gu,to look after; to take care of; to attend to; to show consideration
 文化,3,1632,wén huà,culture; civilization; cultural
 疼,3,1641,téng,(it) hurts; sore
-奇怪,3,1655,qí guài,strange; odd; to marvel; to be baffled
+奇怪,3,1655,qí guài,strange; odd
 礼物,3,1673,lǐ wù,gift; present
 南,3,1709,nán,south
 提高,3,1724,tí gāo,to raise; to increase; to improve
@@ -759,6 +761,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 洗手间,3,9674,xǐ shǒu jiān,toilet; lavatory; washroom
 词语,3,10379,cí yǔ,word; term; expression
 句子,3,10428,jù zi,sentence
+句,3,,jù,measure word sentences (一句话)
 照相,3,,zhào xiàng,to take a picture
 照相机,3,10452,zhào xiàng jī,camera
 筷子,3,10486,kuài zi,chopsticks
@@ -784,6 +787,13 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 起来,3,172,qǐ lai,to get up; to stand up
 想起来,3,,xiǎng qǐ lai,to remember; to recall; to realize
 大小,3,,dà xiǎo,dimension; magnitude; size
+外卖,3,,wài mài,takeout
+叫外卖,3,,jiào wài mài,to order takeout
+不但A而且B,3,,bù dàn A ér qiě B,"not only A, but also B"
+只能,3,,zhǐ néng,can only; obliged to do sth; have no other choice
+词典,3,18663,cí diǎn,dictionary
+词,3,,cí,word
+还,3,,huán,to return; to give back
 对,4,28,duì,concerning; regarding
 对,4,28,duì,to treat (sb a certain way)
 对,4,28,duì,to face
@@ -903,10 +913,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 所有,4,238,suǒ yǒu,all
 所有,4,238,suǒ yǒu,to have; to possess; to own
 情况,4,245,qíng kuàng,circumstances; state of affairs; situation
-最后,4,261,zuì hòu,final
-最后,4,261,zuì hòu,last
-最后,4,261,zuì hòu,finally
-最后,4,261,zuì hòu,ultimate
+最后,4,261,zuì hòu,final; last; finally; ultimate
 成为,4,267,chéng wéi,to become; to turn into
 行,4,272,háng,row
 行,4,272,háng,line
@@ -1079,22 +1086,10 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 当时,4,505,dāng shí,then
 当时,4,505,dāng shí,at that time
 当时,4,505,dāng shí,while
-调查,4,512,diào chá,investigation
-调查,4,512,diào chá,inquiry
-调查,4,512,diào chá,to investigate
-调查,4,512,diào chá,to survey
-调查,4,512,diào chá,survey
-调查,4,512,diào chá,(opinion) poll
-部分,4,513,bù fen,part
-部分,4,513,bù fen,share
-部分,4,513,bù fen,section
-部分,4,513,bù fen,piece
-能力,4,534,néng lì,capability
-能力,4,534,néng lì,ability
-保护,4,536,bǎo hù,to protect
-保护,4,536,bǎo hù,to defend
-保护,4,536,bǎo hù,to safeguard
-保护,4,536,bǎo hù,protection
+调查,4,512,diào chá,investigation; inquiry; to investigate; to survey; survey; (opinion) poll
+部分,4,513,bù fen,part; share; section; piece
+能力,4,534,néng lì,capability; ability
+保护,4,536,bǎo hù,to protect; to defend; to safeguard; protection
 真正,4,544,zhēn zhèng,genuine; real; true
 真正,4,544,zhēn zhèng,really; indeed
 支持,4,546,zhī chí,to be in favor of
@@ -2280,10 +2275,8 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 将来,4,2601,jiāng lái,in the future
 将来,4,2601,jiāng lái,future
 将来,4,2601,jiāng lái,the future
-聊天,4,2609,liáo tiān,to chat
-聊天,4,2609,liáo tiān,to gossip
-小说,4,2624,xiǎo shuō,novel
-小说,4,2624,xiǎo shuō,fiction
+聊天,4,2609,liáo tiān,to chat; to gossip
+小说,4,2624,xiǎo shuō,novel; fiction
 鼓励,4,2649,gǔ lì,to encourage
 理想,4,2661,lǐ xiǎng,an ideal
 理想,4,2661,lǐ xiǎng,a dream
@@ -2415,11 +2408,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 友好,4,3210,Yǒu hǎo,"Youhao district of Yichun city 市, Heilongjiang"
 友好,4,3210,yǒu hǎo,friendly; amicable
 友好,4,3210,yǒu hǎo,close friend
-尝,4,3212,cháng,to taste; to try (food)
-尝,4,3212,cháng,to experience
-尝,4,3212,cháng,(literary) ever; once
-尝,4,3212,cháng,to taste; to experience (variant of 尝)
-尝,4,3212,cháng,old variant of 尝
+尝,4,3212,cháng,to taste; to try (food); to experience
 亿,4,3215,yì,100 million
 对话,4,3221,duì huà,to talk (with sb)
 对话,4,3221,duì huà,dialogue; conversation
@@ -2575,7 +2564,6 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 笑话,4,4078,xiào hua,to laugh at; to mock
 海洋,4,4121,hǎi yáng,ocean
 窗户,4,4130,chuāng hu,window
-不但,4,4161,bù dàn,not only (... but also ...)
 代替,4,4167,dài tì,to replace
 代替,4,4167,dài tì,to take the place of
 家具,4,4188,jiā jù,furniture
@@ -2847,8 +2835,6 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 羽毛球,4,16966,yǔ máo qiú,shuttlecock
 羽毛球,4,16966,yǔ máo qiú,badminton
 流利,4,17449,liú lì,fluent
-词典,4,18663,cí diǎn,dictionary
-词典,4,18663,cí diǎn,also written 辞典
 凉快,4,19483,liáng kuai,nice and cold
 凉快,4,19483,liáng kuai,pleasantly cool
 售货员,4,19954,shòu huò yuán,salesperson
@@ -7732,8 +7718,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 折,6,3422,zhē,to turn sth over
 折,6,3422,zhē,to turn upside down
 折,6,3422,zhē,to tip sth out (of a container)
-渴望,6,3423,kě wàng,to thirst for
-渴望,6,3423,kě wàng,to long for
+渴望,6,3423,kě wàng,to thirst for; to long for
 摆脱,6,3424,bǎi tuō,to break away from
 摆脱,6,3424,bǎi tuō,to cast off (old ideas etc)
 摆脱,6,3424,bǎi tuō,to get rid of
@@ -10017,8 +10002,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 扛,6,7902,káng,to carry on one's shoulder
 扛,6,7902,káng,"(fig.) to take on (a burden, duty etc)"
 洪水,6,7906,hóng shuǐ,deluge; flood
-偿还,6,7907,cháng huán,to repay
-偿还,6,7907,cháng huán,to reimburse
+偿还,6,7907,cháng huán,to repay; to reimburse
 风光,6,7917,fēng guāng,scene
 风光,6,7917,fēng guāng,view
 风光,6,7917,fēng guāng,sight
@@ -10600,19 +10584,13 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 物资,6,9165,wù zī,goods
 物资,6,9165,wù zī,supplies
 犹如,6,9172,yóu rú,similar to; like
-迄今为止,6,9179,qì jīn wéi zhǐ,so far
-迄今为止,6,9179,qì jīn wéi zhǐ,up to now
-迄今为止,6,9179,qì jīn wéi zhǐ,still (not)
+迄今为止,6,9179,qì jīn wéi zhǐ,so far; up to now; still (not)
 支柱,6,9180,zhī zhù,mainstay
 支柱,6,9180,zhī zhù,pillar
 支柱,6,9180,zhī zhù,prop
 支柱,6,9180,zhī zhù,backbone
-饥饿,6,9185,jī è,hunger
-饥饿,6,9185,jī è,starvation
-饥饿,6,9185,jī è,famine
-空虚,6,9191,kōng xū,hollow
-空虚,6,9191,kōng xū,emptiness
-空虚,6,9191,kōng xū,meaningless
+饥饿,6,9185,jī è,hunger; starvation; famine
+空虚,6,9191,kōng xū,hollow; emptiness; meaningless
 竖,6,9191,shù,variant of 竖
 竖,6,9191,shù,to erect
 竖,6,9191,shù,vertical
