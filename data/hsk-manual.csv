@@ -424,6 +424,7 @@ A比BC,2,155,A bǐ B C,A is more C than B
 茶馆,2,,chá guǎn,tea house
 对,2,,duì,for (preposition)
 回国,2,,huí guó,to go back to one's country
+常常,2,,cháng cháng,frequently; usually; often
 啊,3,47,a,"(interjection showing surprise); (modal particle showing enthusiasm)"
 把,3,50,bà,"handle; to hold; to grasp; (classifier: handful, bundle, bunch); classifier for things with handles"
 S把OV,3,50,S bǎ O V,(same as SVO with emphasis on the verb)
@@ -476,8 +477,7 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 关系,3,318,guān xi,relationship; relation
 出现,3,323,chū xiàn,to appear; to arise; to show up; to emerge
 了解,3,336,liǎo jiě,to understand; to realize; to find out
-过去,3,353,guò qu,(in the) past; former; previous
-过去,3,353,guò qù,to go over; to pass by
+过去,3,353,guò qu,(in the) past; to pass by
 参加,3,355,cān jiā,to participate; to take part; to join
 国家,3,356,guó jiā,country; nation; state
 国外,3,,guó wài,abroad
@@ -563,7 +563,6 @@ A像B一样,3,,A xiàng B yī yàng,A is like B
 敢,3,902,gǎn,to dare; daring
 会议,3,928,huì yì,meeting; conference
 经常,3,940,jīng cháng,frequently; constantly; regularly; often
-常常,2,,cháng cháng,frequently; usually; often
 低,3,951,dī,low; beneath; to lower (one's head)
 节目,3,951,jié mù,program
 健康,3,952,jiàn kāng,health; healthy
