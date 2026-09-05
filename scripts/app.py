@@ -38,7 +38,7 @@ class State:
     data       : list[Entry]
     rng        : random.Random
     level_tops : list[int]
-    weights    : float
+    weights    : list[float]
 
     min_level : int
     max_level : int
@@ -118,8 +118,8 @@ class State:
         new_idx : int
             Index into the `entry_history` list.
         """
-        assert 0 <= self.current_entry < len(self.entry_history), f"Expected 0 <= self.current_entry <= {len(self.entry_history)}, but found {self.current_entry=}"
-        assert 0 <= new_idx < len(self.entry_history), f"Expected 0 <= new_idx <= {len(self.entry_history)}, but found {new_idx=}"
+        assert 0 <= self.current_entry < len(self.entry_history), f"Expected 0 <= self.current_entry < {len(self.entry_history)}, but found {self.current_entry=}"
+        assert 0 <= new_idx < len(self.entry_history), f"Expected 0 <= new_idx < {len(self.entry_history)}, but found {new_idx=}"
 
         old_entry = self.entry_history[self.current_entry]
         new_entry = self.entry_history[new_idx]
